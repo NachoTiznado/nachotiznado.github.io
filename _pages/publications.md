@@ -7,14 +7,229 @@ nav: true
 nav_order: 2
 ---
 
-<!-- _pages/publications.md -->
+<style>
+.publication-overview {
+  margin-bottom: 3rem;
+}
+
+.publication-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 1.5rem 0 3rem;
+  border-top: 1px solid var(--global-divider-color);
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.publication-stat {
+  text-align: center;
+  padding: 1.25rem 1rem;
+}
+
+.publication-stat + .publication-stat {
+  border-left: 1px solid var(--global-divider-color);
+}
+
+.publication-stat-value {
+  font-size: 2rem;
+  line-height: 1.1;
+  font-weight: 600;
+  color: var(--global-text-color);
+}
+
+.publication-stat-label {
+  margin-top: 0.35rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--global-text-color-light);
+}
+
+.citation-trajectory {
+  margin: 0 auto 3rem;
+  max-width: 900px;
+}
+
+.citation-trajectory-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.citation-trajectory-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.citation-trajectory-header span {
+  font-size: 0.75rem;
+  color: var(--global-text-color-light);
+}
+
+.citation-chart-wrapper {
+  position: relative;
+  width: 100%;
+  height: 260px;
+}
+
+@media (max-width: 576px) {
+  .publication-stat {
+    padding: 1rem 0.5rem;
+  }
+
+  .publication-stat-value {
+    font-size: 1.6rem;
+  }
+
+  .publication-stat-label {
+    font-size: 0.65rem;
+  }
+
+  .citation-chart-wrapper {
+    height: 220px;
+  }
+}
+</style>
+
+<!-- Publication statistics -->
+<div class="publication-overview">
+
+  <div class="publication-stats">
+
+    <div class="publication-stat">
+      <div class="publication-stat-value">{{ site.data.citations.papers | size }}</div>
+      <div class="publication-stat-label">Publications</div>
+    </div>
+
+    <div class="publication-stat">
+      <div class="publication-stat-value">
+        {% assign total_citations = 0 %}
+        {% for paper in site.data.citations.papers %}
+          {% assign total_citations = total_citations | plus: paper[1].citations %}
+        {% endfor %}
+        {{ total_citations }}
+      </div>
+      <div class="publication-stat-label">Citations</div>
+    </div>
+
+    <div class="publication-stat">
+      {% assign citation_counts = "" | split: "" %}
+      {% for paper in site.data.citations.papers %}
+        {% assign citation_counts = citation_counts | push: paper[1].citations %}
+      {% endfor %}
+      {% assign sorted_counts = citation_counts | sort | reverse %}
+      {% assign h_index = 0 %}
+      {% for count in sorted_counts %}
+        {% assign rank = forloop.index %}
+        {% if count >= rank %}
+          {% assign h_index = rank %}
+        {% endif %}
+      {% endfor %}
+      <div class="publication-stat-value">{{ h_index }}</div>
+      <div class="publication-stat-label">h-index</div>
+    </div>
+
+  </div>
+
+  <!-- Citation trajectory -->
+  <div class="citation-trajectory">
+
+    <div class="citation-trajectory-header">
+      <h2>Citation trajectory</h2>
+      <span>Google Scholar</span>
+    </div>
+
+    <div class="citation-chart-wrapper">
+      <canvas id="citationTrajectory"></canvas>
+    </div>
+
+  </div>
+
+</div>
 
 <!-- Bibsearch Feature -->
-
 {% include bib_search.liquid %}
 
 <div class="publications">
-
 {% bibliography %}
-
 </div>
+
+<!-- Citation trajectory chart -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const annualCitations = {
+    {% for year in site.data.citations.annual_citations %}
+      "{{ year[0] }}": {{ year[1] }}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  };
+
+  const years = Object.keys(annualCitations).sort();
+  let cumulative = 0;
+
+  const cumulativeCitations = years.map(function (year) {
+    cumulative += annualCitations[year];
+    return cumulative;
+  });
+
+  const ctx = document.getElementById("citationTrajectory");
+
+  if (!ctx || years.length === 0) {
+    return;
+  }
+
+  new Chart(ctx, {
+    type: "line",
+    data: {
+      labels: years,
+      datasets: [{
+        data: cumulativeCitations,
+        borderWidth: 2,
+        pointRadius: 3,
+        pointHoverRadius: 5,
+        tension: 0.25,
+        fill: true
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+
+      plugins: {
+        legend: {
+          display: false
+        },
+        tooltip: {
+          callbacks: {
+            label: function(context) {
+              return context.parsed.y.toLocaleString() + " citations";
+            }
+          }
+        }
+      },
+
+      scales: {
+        x: {
+          grid: {
+            display: false
+          },
+          ticks: {
+            maxTicksLimit: 8
+          }
+        },
+
+        y: {
+          beginAtZero: true,
+          ticks: {
+            precision: 0
+          }
+        }
+      }
+    }
+  });
+
+});
+</script>
