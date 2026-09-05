@@ -139,7 +139,7 @@ nav_order: 2
   <h2>Citation trajectory</h2>
 
   <div class="citation-trajectory-label">
-    Cumulative citations · Google Scholar
+    Cumulative citations (based on annual Google Scholar records)
   </div>
 
   <div class="citation-chart">
