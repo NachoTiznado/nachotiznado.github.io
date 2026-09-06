@@ -61,6 +61,105 @@ nav_order: 2
   width: 100%;
   height: 300px;
 }
+
+/* Featured research */
+
+.featured-research {
+  margin: 0 auto 4rem;
+}
+
+.featured-research-header {
+  margin-bottom: 1.75rem;
+}
+
+.featured-research-header h2 {
+  margin-bottom: 0.35rem;
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.featured-research-header p {
+  margin: 0;
+  color: var(--global-text-color-light);
+  font-size: 0.9rem;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.featured-card {
+  border: 1px solid var(--global-divider-color);
+  background: var(--global-bg-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.featured-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.featured-image {
+  width: 100%;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--global-bg-color);
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.featured-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.featured-content {
+  padding: 1.35rem 1.4rem 1.5rem;
+}
+
+.featured-content h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.featured-meta {
+  margin-bottom: 0.9rem;
+  font-size: 0.78rem;
+  color: var(--global-text-color-light);
+}
+
+.featured-content p {
+  margin-bottom: 1rem;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.featured-keywords {
+  font-size: 0.72rem;
+  line-height: 1.5;
+  color: var(--global-text-color-light);
+}
+
+@media (max-width: 768px) {
+
+  .featured-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .featured-image {
+    height: 240px;
+  }
+
+}
+
 </style>
 
 
@@ -148,6 +247,257 @@ nav_order: 2
 
 </div>
 
+<!-- Featured research -->
+
+<div class="featured-research">
+
+  <div class="featured-research-header">
+    <h2>Featured research</h2>
+    <p>
+      A selection of publications spanning accessibility, transport equity,
+      mobility, and justice.
+    </p>
+  </div>
+
+
+  <div class="featured-grid">
+
+
+    <!-- 1. Public transport accessibility -->
+
+    <article class="featured-card">
+
+      <div class="featured-image">
+        <img
+          src="{{ '/assets/img/JTG_Fig.jpg' | relative_url }}"
+          alt="Maps of public transport accessibility in Santiago de Chile"
+        >
+      </div>
+
+      <div class="featured-content">
+
+        <h3>
+          Public transport accessibility accounting for level of service and
+          competition for urban opportunities
+        </h3>
+
+        <div class="featured-meta">
+          <em>Journal of Transport Geography</em> · 2021
+        </div>
+
+        <p>
+          How should we measure whether public transport provides equitable
+          access to opportunities? This paper develops an accessibility measure
+          that accounts for both transit level of service and competition for
+          opportunities, and applies it to education in Santiago de Chile.
+        </p>
+
+        <div class="featured-keywords">
+          accessibility · transport equity · public transport · Santiago
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- 2. Transport and equity in Latin America -->
+
+    <article class="featured-card">
+
+      <div class="featured-image">
+        <img
+          src="{{ '/assets/img/TRV_Fig.jpg' | relative_url }}"
+          alt="Conceptual framework for socially oriented accessibility assessments"
+        >
+      </div>
+
+      <div class="featured-content">
+
+        <h3>
+          Transport and equity in Latin America: a critical review of socially
+          oriented accessibility assessments
+        </h3>
+
+        <div class="featured-meta">
+          <em>Transport Reviews</em> · 2020
+        </div>
+
+        <p>
+          This review examines how transportation research in Latin America
+          has approached equity through accessibility assessment. It identifies
+          key conceptual and methodological gaps and discusses how accessibility
+          measures can better account for social inequalities and the experiences
+          of different population groups.
+        </p>
+
+        <div class="featured-keywords">
+          transport equity · accessibility · Latin America · transport justice
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- 3. Transportation, time poverty and activity participation -->
+
+    <article class="featured-card">
+
+      <div class="featured-image">
+        <img
+          src="{{ '/assets/img/TRIP_Fig.jpg' | relative_url }}"
+          alt="Conceptualization of time poverty and transport-related time poverty"
+        >
+      </div>
+
+      <div class="featured-content">
+
+        <h3>
+          Exploring the interplay of transportation, time poverty, and activity
+          participation
+        </h3>
+
+        <div class="featured-meta">
+          <em>Transportation Research Interdisciplinary Perspectives</em> · 2024
+        </div>
+
+        <p>
+          Time is a fundamental resource for participating in everyday life,
+          yet transportation can consume a substantial share of it. This paper
+          examines the relationship between transport disadvantage, time poverty,
+          and activity participation, highlighting how excessive travel time can
+          constrain people's ability to engage in activities and affect wellbeing.
+        </p>
+
+        <div class="featured-keywords">
+          time poverty · transport disadvantage · activity participation · wellbeing
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- 4. Cycling behaviour -->
+
+    <article class="featured-card">
+
+      <div class="featured-image">
+        <img
+          src="{{ '/assets/img/TRA_Fig.jpg' | relative_url }}"
+          alt="Cycling environments and infrastructure in Toronto"
+        >
+      </div>
+
+      <div class="featured-content">
+
+        <h3>
+          Tracking cycling behaviour and comfort perceptions in Toronto:
+          Trends from 1999 to 2023
+        </h3>
+
+        <div class="featured-meta">
+          <em>Transportation Research Part A</em> · 2026
+        </div>
+
+        <p>
+          How have cycling patterns and perceptions of comfort changed as
+          Toronto's cycling infrastructure has evolved? This paper examines
+          long-term trends in cycling behaviour and comfort perceptions,
+          highlighting the relationship between the urban cycling environment
+          and people's experiences of cycling.
+        </p>
+
+        <div class="featured-keywords">
+          cycling · cycling infrastructure · comfort · Toronto
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- 5. Caregiving -->
+
+    <article class="featured-card">
+
+      <div class="featured-image">
+        <img
+          src="{{ '/assets/img/US_Fig.png' | relative_url }}"
+          alt="Caregiver profiles based on caregiving workload, mobility and stress"
+        >
+      </div>
+
+      <div class="featured-content">
+
+        <h3>
+          Profiling caregivers: caregiving workload, mobility, stress, and
+          remote work difficulties
+        </h3>
+
+        <div class="featured-meta">
+          <em>Urban Studies</em> · 2025
+        </div>
+
+        <p>
+          Caregiving responsibilities shape how people use their time, travel,
+          work, and experience everyday mobility. This paper identifies distinct
+          caregiver profiles based on caregiving workload, mobility, stress,
+          and difficulties with remote work, revealing important differences
+          in the lived experience of mobility and care.
+        </p>
+
+        <div class="featured-keywords">
+          caregiving · mobility of care · stress · remote work
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- 6. Standards of fairness -->
+
+    <article class="featured-card">
+
+      <div class="featured-image">
+        <img
+          src="{{ '/assets/img/TRANSP_Fig.png' | relative_url }}"
+          alt="Framework connecting fairness, equity and standards in transportation"
+        >
+      </div>
+
+      <div class="featured-content">
+
+        <h3>
+          Standards of fairness in the transportation literature
+        </h3>
+
+        <div class="featured-meta">
+          <em>Transportation</em> · 2025
+        </div>
+
+        <p>
+          What does it mean for a transportation policy or intervention to be
+          fair? This paper examines how fairness, equity, and standards are
+          conceptualized in the transportation literature and proposes a
+          framework for making the normative assumptions behind transportation
+          research more explicit.
+        </p>
+
+        <div class="featured-keywords">
+          transport justice · fairness · equity · accessibility
+        </div>
+
+      </div>
+
+    </article>
+
+
+  </div>
+
+</div>
 
 <!-- Bibsearch Feature -->
 
