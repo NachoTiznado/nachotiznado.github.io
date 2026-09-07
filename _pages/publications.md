@@ -160,6 +160,24 @@ nav_order: 2
 
 }
 
+/* All publications */
+
+.all-publications-header {
+  margin: 0 0 1.25rem;
+}
+
+.all-publications-header h2 {
+  margin-bottom: 0.35rem;
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.all-publications-header p {
+  margin: 0;
+  color: var(--global-text-color-light);
+  font-size: 0.9rem;
+}
+
 </style>
 
 
@@ -499,7 +517,12 @@ nav_order: 2
 
 </div>
 
-<!-- Bibsearch Feature -->
+<!-- All publications -->
+
+<div class="all-publications-header">
+  <h2>All publications</h2>
+  <p>Search and filter by title, author, journal, or year.</p>
+</div>
 
 {% include bib_search.liquid %}
 
