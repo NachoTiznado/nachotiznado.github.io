@@ -62,36 +62,6 @@ nav_order: 2
   height: 300px;
 }
 
-<!-- Research network -->
-<div class="research-network">
-  <div class="research-network-header">
-    <h2>Research network</h2>
-    <p>An evolving network of collaborators across disciplines and around the world.</p>
-  </div>
-
-  <div class="network-stats">
-    <div class="network-stat">
-      <div class="network-stat-value">{{ site.data.collaborator_stats.collaborators }}</div>
-      <div class="network-stat-label">Collaborators</div>
-    </div>
-
-    <div class="network-stat">
-      <div class="network-stat-value">{{ site.data.collaborator_stats.institutions }}</div>
-      <div class="network-stat-label">Institutions &amp; organizations</div>
-    </div>
-
-    <div class="network-stat">
-      <div class="network-stat-value">{{ site.data.collaborator_stats.countries }}</div>
-      <div class="network-stat-label">Countries</div>
-    </div>
-
-    <div class="network-stat">
-      <div class="network-stat-value">{{ site.data.collaborator_stats.discipline_groups }}</div>
-      <div class="network-stat-label">Disciplinary fields</div>
-    </div>
-  </div>
-</div>
-
 /* Featured research */
 
 .featured-research {
@@ -193,7 +163,7 @@ nav_order: 2
 /* All publications */
 
 .all-publications-header {
-  margin: 0 0 1.25rem;
+  margin: 4rem 0 1.25rem;
 }
 
 .all-publications-header h2 {
@@ -345,6 +315,35 @@ nav_order: 2
 
 </div>
 
+<!-- Research network -->
+<div class="research-network">
+  <div class="research-network-header">
+    <h2>Research network</h2>
+    <p>An evolving network of collaborators across disciplines and around the world.</p>
+  </div>
+
+  <div class="network-stats">
+    <div class="network-stat">
+      <div class="network-stat-value">{{ site.data.collaborator_stats.collaborators }}</div>
+      <div class="network-stat-label">Collaborators</div>
+    </div>
+
+    <div class="network-stat">
+      <div class="network-stat-value">{{ site.data.collaborator_stats.institutions }}</div>
+      <div class="network-stat-label">Institutions &amp; organizations</div>
+    </div>
+
+    <div class="network-stat">
+      <div class="network-stat-value">{{ site.data.collaborator_stats.countries }}</div>
+      <div class="network-stat-label">Countries</div>
+    </div>
+
+    <div class="network-stat">
+      <div class="network-stat-value">{{ site.data.collaborator_stats.discipline_groups }}</div>
+      <div class="network-stat-label">Disciplinary fields</div>
+    </div>
+  </div>
+</div>
 
 <!-- Citation trajectory -->
 
