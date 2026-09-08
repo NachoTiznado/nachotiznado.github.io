@@ -62,6 +62,36 @@ nav_order: 2
   height: 300px;
 }
 
+<!-- Research network -->
+<div class="research-network">
+  <div class="research-network-header">
+    <h2>Research network</h2>
+    <p>An evolving network of collaborators across disciplines and around the world.</p>
+  </div>
+
+  <div class="network-stats">
+    <div class="network-stat">
+      <div class="network-stat-value">{{ site.data.collaborator_stats.collaborators }}</div>
+      <div class="network-stat-label">Collaborators</div>
+    </div>
+
+    <div class="network-stat">
+      <div class="network-stat-value">{{ site.data.collaborator_stats.institutions }}</div>
+      <div class="network-stat-label">Institutions &amp; organizations</div>
+    </div>
+
+    <div class="network-stat">
+      <div class="network-stat-value">{{ site.data.collaborator_stats.countries }}</div>
+      <div class="network-stat-label">Countries</div>
+    </div>
+
+    <div class="network-stat">
+      <div class="network-stat-value">{{ site.data.collaborator_stats.discipline_groups }}</div>
+      <div class="network-stat-label">Disciplinary fields</div>
+    </div>
+  </div>
+</div>
+
 /* Featured research */
 
 .featured-research {
@@ -176,6 +206,73 @@ nav_order: 2
   margin: 0;
   color: var(--global-text-color-light);
   font-size: 0.9rem;
+}
+
+/* Research network */
+
+.research-network {
+  margin: 0 auto 3rem;
+}
+
+.research-network-header {
+  margin-bottom: 1.5rem;
+}
+
+.research-network-header h2 {
+  margin-bottom: 0.35rem;
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.research-network-header p {
+  margin: 0;
+  color: var(--global-text-color-light);
+  font-size: 0.9rem;
+}
+
+.network-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--global-divider-color);
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.network-stat {
+  text-align: center;
+  padding: 1.25rem 1rem;
+}
+
+.network-stat + .network-stat {
+  border-left: 1px solid var(--global-divider-color);
+}
+
+.network-stat-value {
+  font-size: 2rem;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.network-stat-label {
+  margin-top: 0.35rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--global-text-color-light);
+}
+
+@media (max-width: 768px) {
+  .network-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .network-stat:nth-child(3) {
+    border-left: none;
+    border-top: 1px solid var(--global-divider-color);
+  }
+
+  .network-stat:nth-child(4) {
+    border-top: 1px solid var(--global-divider-color);
+  }
 }
 
 </style>
