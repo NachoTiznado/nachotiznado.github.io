@@ -1,17 +1,52 @@
 ---
 layout: page
 permalink: /publications/
-title: Publications
-description: Stats, citation trajectory, featured research and publications by year in reversed chronological order.
+title: Research
+description: An overview of my research profile, themes, collaborations, and publications.
 nav: true
 nav_order: 2
 ---
 
 <style>
+
+.research-summary {
+  margin: 0 auto 3rem;
+}
+
+.research-summary-header {
+  margin-bottom: 1.5rem;
+}
+
+.research-summary-header h2 {
+  margin-bottom: 0.35rem;
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.research-summary-header p {
+  margin: 0;
+  color: var(--global-text-color-light);
+  font-size: 0.9rem;
+}
+
+.research-wordcloud {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.research-wordcloud img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .publication-stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 1.5rem 0 3rem;
+  margin: 1.5rem 0;
   border-top: 1px solid var(--global-divider-color);
   border-bottom: 1px solid var(--global-divider-color);
 }
@@ -32,6 +67,36 @@ nav_order: 2
 }
 
 .publication-stat-label {
+  margin-top: 0.35rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--global-text-color-light);
+}
+
+.network-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--global-divider-color);
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.network-stat {
+  text-align: center;
+  padding: 1.25rem 1rem;
+}
+
+.network-stat + .network-stat {
+  border-left: 1px solid var(--global-divider-color);
+}
+
+.network-stat-value {
+  font-size: 2rem;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.network-stat-label {
   margin-top: 0.35rem;
   font-size: 0.75rem;
   text-transform: uppercase;
@@ -147,19 +212,6 @@ nav_order: 2
   color: var(--global-text-color-light);
 }
 
-@media (max-width: 768px) {
-
-  .featured-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .featured-image {
-    height: 240px;
-  }
-
-}
-
 /* All publications */
 
 .all-publications-header {
@@ -178,59 +230,8 @@ nav_order: 2
   font-size: 0.9rem;
 }
 
-/* Research network */
-
-.research-network {
-  margin: 0 auto 3rem;
-}
-
-.research-network-header {
-  margin-bottom: 1.5rem;
-}
-
-.research-network-header h2 {
-  margin-bottom: 0.35rem;
-  font-size: 1.35rem;
-  font-weight: 500;
-}
-
-.research-network-header p {
-  margin: 0;
-  color: var(--global-text-color-light);
-  font-size: 0.9rem;
-}
-
-.network-stats {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  border-top: 1px solid var(--global-divider-color);
-  border-bottom: 1px solid var(--global-divider-color);
-}
-
-.network-stat {
-  text-align: center;
-  padding: 1.25rem 1rem;
-}
-
-.network-stat + .network-stat {
-  border-left: 1px solid var(--global-divider-color);
-}
-
-.network-stat-value {
-  font-size: 2rem;
-  line-height: 1.1;
-  font-weight: 600;
-}
-
-.network-stat-label {
-  margin-top: 0.35rem;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--global-text-color-light);
-}
-
 @media (max-width: 768px) {
+
   .network-stats {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -243,107 +244,160 @@ nav_order: 2
   .network-stat:nth-child(4) {
     border-top: 1px solid var(--global-divider-color);
   }
+
+  .featured-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .featured-image {
+    height: 240px;
+  }
+
+  .research-wordcloud {
+    margin-bottom: 2rem;
+  }
+
 }
 
 </style>
 
 
-<!-- Publication statistics -->
+<!-- Research summary -->
 
-<div class="publication-stats">
+<div class="research-summary">
 
-  <!-- Publications -->
-  <div class="publication-stat">
-    <div class="publication-stat-value">
-      {{ site.data.citations.papers | size }}
-    </div>
-    <div class="publication-stat-label">
-      Publications
-    </div>
+  <div class="research-summary-header">
+    <h2>Research summary</h2>
+    <p>An overview of my research themes, collaborations, and scholarly reach.</p>
+  </div>
+
+  <!-- Word cloud -->
+
+  <div class="research-wordcloud">
+    <img
+      src="{{ '/assets/img/wordcloud.png' | relative_url }}"
+      alt="Word cloud showing frequently occurring words across my research publications."
+    >
   </div>
 
 
-  <!-- Citations -->
-  <div class="publication-stat">
+  <!-- Publication statistics -->
 
-    {% assign total_citations = 0 %}
+  <div class="publication-stats">
 
-    {% for paper in site.data.citations.papers %}
-      {% assign total_citations = total_citations | plus: paper[1].citations %}
-    {% endfor %}
+    <!-- Publications -->
 
-    <div class="publication-stat-value">
-      {{ total_citations }}
+    <div class="publication-stat">
+      <div class="publication-stat-value">
+        {{ site.data.citations.papers | size }}
+      </div>
+
+      <div class="publication-stat-label">
+        Publications
+      </div>
     </div>
 
-    <div class="publication-stat-label">
-      Citations
+
+    <!-- Citations -->
+
+    <div class="publication-stat">
+
+      {% assign total_citations = 0 %}
+
+      {% for paper in site.data.citations.papers %}
+        {% assign total_citations = total_citations | plus: paper[1].citations %}
+      {% endfor %}
+
+      <div class="publication-stat-value">
+        {{ total_citations }}
+      </div>
+
+      <div class="publication-stat-label">
+        Citations
+      </div>
+
+    </div>
+
+
+    <!-- h-index -->
+
+    <div class="publication-stat">
+
+      {% assign citation_counts = "" | split: "" %}
+
+      {% for paper in site.data.citations.papers %}
+        {% assign citation_counts = citation_counts | push: paper[1].citations %}
+      {% endfor %}
+
+      {% assign sorted_counts = citation_counts | sort | reverse %}
+      {% assign h_index = 0 %}
+
+      {% for count in sorted_counts %}
+        {% assign rank = forloop.index %}
+
+        {% if count >= rank %}
+          {% assign h_index = rank %}
+        {% endif %}
+      {% endfor %}
+
+      <div class="publication-stat-value">
+        {{ h_index }}
+      </div>
+
+      <div class="publication-stat-label">
+        h-index
+      </div>
+
     </div>
 
   </div>
 
 
-  <!-- h-index -->
-  <div class="publication-stat">
-
-    {% assign citation_counts = "" | split: "" %}
-
-    {% for paper in site.data.citations.papers %}
-      {% assign citation_counts = citation_counts | push: paper[1].citations %}
-    {% endfor %}
-
-    {% assign sorted_counts = citation_counts | sort | reverse %}
-    {% assign h_index = 0 %}
-
-    {% for count in sorted_counts %}
-      {% assign rank = forloop.index %}
-
-      {% if count >= rank %}
-        {% assign h_index = rank %}
-      {% endif %}
-    {% endfor %}
-
-    <div class="publication-stat-value">
-      {{ h_index }}
-    </div>
-
-    <div class="publication-stat-label">
-      h-index
-    </div>
-
-  </div>
-
-</div>
-
-<!-- Research network -->
-<div class="research-network">
-  <div class="research-network-header">
-    <h2>Research network</h2>
-    <p>An evolving network of collaborators across disciplines and around the world.</p>
-  </div>
+  <!-- Research network statistics -->
 
   <div class="network-stats">
+
     <div class="network-stat">
-      <div class="network-stat-value">{{ site.data.collaborator_stats.collaborators }}</div>
-      <div class="network-stat-label">Collaborators</div>
+      <div class="network-stat-value">
+        {{ site.data.collaborator_stats.collaborators }}
+      </div>
+      <div class="network-stat-label">
+        Collaborators
+      </div>
     </div>
 
     <div class="network-stat">
-      <div class="network-stat-value">{{ site.data.collaborator_stats.institutions }}</div>
-      <div class="network-stat-label">Institutions &amp; organizations</div>
+      <div class="network-stat-value">
+        {{ site.data.collaborator_stats.institutions }}
+      </div>
+      <div class="network-stat-label">
+        Institutions &amp; organizations
+      </div>
     </div>
 
     <div class="network-stat">
-      <div class="network-stat-value">{{ site.data.collaborator_stats.countries }}</div>
-      <div class="network-stat-label">Countries</div>
+      <div class="network-stat-value">
+        {{ site.data.collaborator_stats.countries }}
+      </div>
+      <div class="network-stat-label">
+        Countries
+      </div>
     </div>
 
     <div class="network-stat">
-      <div class="network-stat-value">{{ site.data.collaborator_stats.discipline_groups }}</div>
-      <div class="network-stat-label">Disciplinary fields</div>
+      <div class="network-stat-value">
+        5 · 59
+      </div>
+      <div class="network-stat-label">
+        Broad fields · disciplinary areas
+      </div>
     </div>
+
   </div>
+
 </div>
+
 
 <!-- Citation trajectory -->
 
@@ -360,6 +414,7 @@ nav_order: 2
   </div>
 
 </div>
+
 
 <!-- Featured research -->
 
@@ -613,6 +668,7 @@ nav_order: 2
 
 </div>
 
+
 <!-- All publications -->
 
 <div class="all-publications-header">
@@ -701,9 +757,11 @@ new Chart(ctx, {
     scales: {
 
       x: {
+
         grid: {
           display: false
         }
+
       },
 
       y: {
