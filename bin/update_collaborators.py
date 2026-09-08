@@ -271,12 +271,8 @@ for raw_name in authors:
     # Remove Ignacio
     normalized_raw = normalize_text(raw_name)
 
-    if (
-        "tiznado" in normalized_raw
-        and "aitken" in normalized_raw
-        and "ignacio" in normalized_raw
-    ):
-        continue
+    if "tiznado" in normalized_raw and "ignacio" in normalized_raw:
+    continue
 
     # Explicit alias
     if raw_name in ALIASES:
