@@ -1,0 +1,475 @@
+- name: Juan Carlos Muñoz
+  country: Chile
+  institution: Pontificia Universidad Católica de Chile
+  discipline: Transportation Engineering
+  discipline_group: Engineering & Data
+- name: Ricardo Hurtubia
+  country: Chile
+  institution: Pontificia Universidad Católica de Chile
+  discipline: Transportation Engineering / Urban Planning
+  discipline_group: Engineering & Data
+- name: Lake Sagaris
+  country: Chile
+  institution: Pontificia Universidad Católica de Chile
+  discipline: Urban Planning / Transport
+  discipline_group: Social Sciences & Planning
+- name: Emilio Berríos
+  country: Chile
+  institution: Pontificia Universidad Católica de Chile
+  discipline: Urban Planning / Transportation
+  discipline_group: Social Sciences & Planning
+- name: Joonsoo Lyeo
+  country: Canada
+  institution: University of Toronto
+  discipline: Public Health / Transportation Safety
+  discipline_group: Health Sciences
+- name: Steven Farber
+  country: Canada
+  institution: University of Toronto
+  discipline: Geography / Transport Geography
+  discipline_group: Social Sciences & Planning
+- name: Hilary K. Brown
+  country: Canada
+  institution: University of Toronto
+  discipline: Public Health / Epidemiology
+  discipline_group: Health Sciences
+- name: Nicholas Spence
+  country: Canada
+  institution: University of Toronto
+  discipline: Sociology / Health
+  discipline_group: Health Sciences
+- name: Giovanni Vecchio
+  country: Chile
+  institution: Pontificia Universidad Católica de Chile
+  discipline: Urban Planning / Geography
+  discipline_group: Social Sciences & Planning
+- name: Rodrigo Mora
+  country: Chile
+  institution: Universidad de Chile
+  discipline: Architecture / Urban Planning
+  discipline_group: Humanities & Design
+- name: Paula Voorheis
+  country: USA
+  institution: University of Wisconsin–Madison
+  discipline: Public Health / Behavioural Science
+  discipline_group: Health Sciences
+- name: Syeda Mariam Hasnain
+  country: Canada
+  institution: University of Toronto
+  discipline: Health / Life Sciences
+  discipline_group: Health Sciences
+- name: Michael J. Widener
+  country: USA
+  institution: University of Cincinnati
+  discipline: Geography / Spatial Analysis
+  discipline_group: Social Sciences & Planning
+- name: Michelle P. Silver
+  country: Canada
+  institution: University of Toronto
+  discipline: Sociology / Gerontology
+  discipline_group: Social Sciences & Planning
+- name: Thomas Guerrero
+  country: Colombia
+  institution: Universidad Francisco de Paula Santander, Seccional Ocaña
+  discipline: Engineering
+  discipline_group: Engineering & Data
+- name: Alexander Tabascio
+  country: Canada
+  institution: University of Toronto
+  discipline: Transportation / Geography
+  discipline_group: Social Sciences & Planning
+- name: Darnel Harris
+  country: Canada
+  institution: University of Toronto
+  discipline: Transportation / Planning
+  discipline_group: Social Sciences & Planning
+- name: Yixue Zhang
+  country: Canada
+  institution: University of Toronto
+  discipline: Geography / Transportation
+  discipline_group: Social Sciences & Planning
+- name: Mischa Young
+  country: Canada
+  institution: York University
+  discipline: Geography / Urban Studies
+  discipline_group: Social Sciences & Planning
+- name: Timothy Ross
+  country: Canada
+  institution: University of Toronto
+  discipline: Public Health
+  discipline_group: Health Sciences
+- name: Vicente Iglesias
+  country: Chile
+  institution: Pontificia Universidad Católica de Chile
+  discipline: Transportation Engineering
+  discipline_group: Engineering & Data
+- name: Francisca Giraldez
+  country: Chile
+  institution: Metro de Santiago
+  discipline: Transportation Engineering
+  discipline_group: Engineering & Data
+- name: Camila Albornoz
+  country: Chile
+  institution: Pontificia Universidad Católica de Chile
+  discipline: Anthropology / Design & Urban Studies
+  discipline_group: Humanities & Design
+- name: Martín Tironi
+  country: Chile
+  institution: Pontificia Universidad Católica de Chile
+  discipline: Sociology / Urban Studies
+  discipline_group: Social Sciences & Planning
+- name: Jeff Allen
+  country: Canada
+  institution: University of Toronto
+  discipline: Geography / Transportation
+  discipline_group: Social Sciences & Planning
+- name: Matthew Palm
+  country: Canada
+  institution: University of Toronto
+  discipline: Geography / Transportation
+  discipline_group: Social Sciences & Planning
+- name: Luis Ángel Guzmán
+  country: Colombia
+  institution: Universidad de los Andes
+  discipline: Transportation / Urban Planning
+  discipline_group: Social Sciences & Planning
+- name: Julián Arellana
+  country: Colombia
+  institution: Universidad del Norte
+  discipline: Transportation Engineering
+  discipline_group: Engineering & Data
+- name: Mateus Humberto
+  country: Brazil
+  institution: University of São Paulo
+  discipline: Transportation Engineering
+  discipline_group: Engineering & Data
+- name: Eduardo Vasconcellos
+  country: Brazil
+  institution: ANTP / independent researcher
+  discipline: Transportation / Urban Policy
+  discipline_group: Public Policy & Government
+- name: Clemente Larraín
+  country: Chile
+  institution: Pontificia Universidad Católica de Chile
+  discipline: Urban Planning / Urban Economics
+  discipline_group: Social Sciences & Planning
+- name: Jorge Fuenzalida-Izquierdo
+  country: Chile
+  institution: Pontificia Universidad Católica de Chile
+  discipline: Transportation Engineering / Sustainable Mobility
+  discipline_group: Engineering & Data
+- name: Lola Blandin
+  country: France
+  institution: Université Grenoble Alpes
+  discipline: Economics / Urban & Transport Economics
+  discipline_group: Social Sciences & Planning
+- name: Luis Vásquez
+  country: Chile
+  institution: Universidad de Chile
+  discipline: Architecture
+  discipline_group: Humanities & Design
+- name: Jaime Soza-Parra
+  country: Chile
+  institution: Pontificia Universidad Católica de Chile
+  discipline: Transportation Engineering
+  discipline_group: Engineering & Data
+- name: Tomás Cox
+  country: Chile
+  institution: Pontificia Universidad Católica de Chile
+  discipline: Urban Planning / Transportation
+  discipline_group: Social Sciences & Planning
+- name: Ricardo Sánchez Lang
+  country: Mexico
+  institution: Órgano Regulador de Transporte, Mexico City
+  discipline: Transportation / Transport Technology
+  discipline_group: Engineering & Data
+- name: Cristian Navas Duk
+  country: Chile
+  institution: Inter-American Development Bank
+  discipline: Transportation / Urban Planning
+  discipline_group: Social Sciences & Planning
+- name: Stefan Steiniger
+  country: Chile
+  institution: Pontificia Universidad Católica de Valparaíso
+  discipline: GIS / Geomatics
+  discipline_group: Engineering & Data
+- name: Elnaz Yousefzadeh Barri
+  country: Canada
+  institution: Ontario Ministry of Transportation
+  discipline: Transportation Planning / GIS
+  discipline_group: Engineering & Data
+- name: Hadi Jahanshahi
+  country: Canada
+  institution: University of Toronto
+  discipline: Transportation / Travel Behaviour
+  discipline_group: Social Sciences & Planning
+- name: Eda Beyazit
+  country: UK
+  institution: University of Manchester
+  discipline: Transport / Gender / Urban Studies
+  discipline_group: Social Sciences & Planning
+- name: Karen Lucas
+  country: UK
+  institution: University of Manchester
+  discipline: Human Geography / Transport Justice
+  discipline_group: Social Sciences & Planning
+- name: Bryan Castillo
+  country: Canada
+  institution: University of Waterloo
+  discipline: Planning / Transport Equity
+  discipline_group: Social Sciences & Planning
+- name: Gabriel Oyarzún
+  country: Chile
+  institution: EXPLAIN
+  discipline: Architecture / Urbanism
+  discipline_group: Humanities & Design
+- name: Jaime Vergara
+  country: Chile
+  institution: +Ciclo / TU Delft
+  discipline: GIS / Sustainable Mobility
+  discipline_group: Engineering & Data
+- name: Kamille LeClair
+  country: Canada
+  institution: University of Toronto
+  discipline: Geography / Planning
+  discipline_group: Social Sciences & Planning
+- name: Willem Klumpenhouwer
+  country: Canada
+  institution: Independent / Transport consulting
+  discipline: Transportation Engineering
+  discipline_group: Engineering & Data
+- name: Lucaz Gonzalez
+  country: Chile
+  institution: Espacio Público
+  discipline: Anthropology
+  discipline_group: Social Sciences & Planning
+- name: Catalina Marshall
+  country: Chile
+  institution: Universidad Andrés Bello / FADEU UC
+  discipline: Urban Planning
+  discipline_group: Social Sciences & Planning
+- name: Brice Batomen Kuimi
+  country: Canada
+  institution: University of Toronto
+  discipline: Epidemiology / Public Health
+  discipline_group: Health Sciences
+- name: Patricia Galilea
+  country: Chile
+  institution: Pontificia Universidad Católica de Chile
+  discipline: Transportation Engineering
+  discipline_group: Engineering & Data
+- name: Felipe Delgado
+  country: Chile
+  institution: Pontificia Universidad Católica de Chile
+  discipline: Transportation Engineering
+  discipline_group: Engineering & Data
+- name: Markus Niehaus
+  country: Chile
+  institution: Sinter / DB Engineering
+  discipline: Transportation / Railway Engineering
+  discipline_group: Engineering & Data
+- name: Christopher D. Higgins
+  country: Canada
+  institution: University of Toronto
+  discipline: Transportation / Planning
+  discipline_group: Social Sciences & Planning
+- name: Amer Shalaby
+  country: Canada
+  institution: University of Toronto
+  discipline: Transportation Engineering
+  discipline_group: Engineering & Data
+- name: Khandker Nurul
+  country: Canada
+  institution: University of Toronto
+  discipline: Transportation
+  discipline_group: Social Sciences & Planning
+- name: Eric J. Miller
+  country: Canada
+  institution: University of Toronto
+  discipline: Transportation / Urban Modelling
+  discipline_group: Social Sciences & Planning
+- name: Shauna Brail
+  country: Canada
+  institution: University of Toronto
+  discipline: Urban Studies / Planning
+  discipline_group: Social Sciences & Planning
+- name: Sara Diamond
+  country: Canada
+  institution: OCAD University
+  discipline: Design / Data Visualization
+  discipline_group: Humanities & Design
+- name: Billy Zhang
+  country: Canada
+  institution: University of Toronto
+  discipline: Transportation
+  discipline_group: Social Sciences & Planning
+- name: Thiago Guimarães
+  country: Brazil
+  institution: WRI Brasil
+  discipline: Urban Planning / Transportation
+  discipline_group: Social Sciences & Planning
+- name: Avet Khachatryan
+  country: Canada
+  institution: University of Toronto
+  discipline: Geography / Transportation
+  discipline_group: Social Sciences & Planning
+- name: João Pedro Figueira Amorim Parga
+  country: Canada
+  institution: University of Toronto
+  discipline: Transportation / Geography
+  discipline_group: Social Sciences & Planning
+- name: Shaila Jamal
+  country: Canada
+  institution: University of Toronto
+  discipline: Geography / Transportation
+  discipline_group: Social Sciences & Planning
+- name: Anton Yu
+  country: Canada
+  institution: University of Toronto
+  discipline: Geography / Planning
+  discipline_group: Social Sciences & Planning
+- name: Zehui Yin
+  country: Canada
+  institution: McMaster University
+  discipline: Geography / Transportation
+  discipline_group: Social Sciences & Planning
+- name: Miguel Yaksic
+  country: Chile
+  institution: Independent consultant
+  discipline: Philosophy / Ethics
+  discipline_group: Humanities & Design
+- name: Hans Werner
+  country: Chile
+  institution: Universidad de Concepción / Solutiva
+  discipline: Transportation Engineering / Planning
+  discipline_group: Engineering & Data
+- name: Juan Antonio Carrasco
+  country: Chile
+  institution: University of Concepción
+  discipline: Transportation Engineering
+  discipline_group: Engineering & Data
+- name: Chunjiang Li
+  country: Canada
+  institution: University of Toronto
+  discipline: Geography / Transportation
+  discipline_group: Social Sciences & Planning
+- name: Sebastian Astroza
+  country: Chile
+  institution: Pontificia Universidad Católica de Chile
+  discipline: Transportation Engineering
+  discipline_group: Engineering & Data
+- name: María Consuelo Smith Piel
+  country: Chile
+  institution: BHP
+  discipline: Engineering
+  discipline_group: Engineering & Data
+- name: Anastasia Soukhov
+  country: Canada
+  institution: University of Toronto
+  discipline: Transportation / Geography
+  discipline_group: Social Sciences & Planning
+- name: Antonio Páez
+  country: Canada
+  institution: McMaster University
+  discipline: Geography / Spatial Analysis
+  discipline_group: Social Sciences & Planning
+- name: Matan Singer
+  country: Canada
+  institution: University of Toronto
+  discipline: Transportation / Survey Research
+  discipline_group: Social Sciences & Planning
+- name: Catherine Morency
+  country: Canada
+  institution: Polytechnique Montréal
+  discipline: Transportation Engineering
+  discipline_group: Engineering & Data
+- name: Howaida Hassan
+  country: Canada
+  institution: City of Edmonton
+  discipline: Transportation Planning / Public Policy
+  discipline_group: Public Policy & Government
+- name: Samuel Morissette
+  country: Canada
+  institution: Polytechnique Montréal
+  discipline: Engineering
+  discipline_group: Engineering & Data
+- name: Hubert Verreault
+  country: Canada
+  institution: Polytechnique Montréal
+  discipline: Engineering
+  discipline_group: Engineering & Data
+- name: Jaimy Fischer
+  country: Canada
+  institution: University of Toronto
+  discipline: Geography / Transportation
+  discipline_group: Social Sciences & Planning
+- name: Brenn Anderson-Gregson
+  country: Canada
+  institution: University of Toronto
+  discipline: Geography / Transportation
+  discipline_group: Social Sciences & Planning
+- name: Meghan Winters
+  country: Canada
+  institution: Simon Fraser University
+  discipline: Public Health / Active Transportation
+  discipline_group: Health Sciences
+- name: Ben Woodward
+  country: Canada
+  institution: Esri Canada
+  discipline: Geography / GIS
+  discipline_group: Engineering & Data
+- name: Alex Smith
+  country: Canada
+  institution: Esri Canada
+  discipline: GIS / Geomatics / Spatial Data Science
+  discipline_group: Engineering & Data
+- name: Noah Alexander Kelly
+  country: Canada
+  institution: University of Toronto
+  discipline: Social Policy / Transportation
+  discipline_group: Public Policy & Government
+- name: Rachel K. Wong
+  country: Canada
+  institution: University of Toronto
+  discipline: Social Policy / Public Health
+  discipline_group: Health Sciences
+- name: Stephanie Begun
+  country: Canada
+  institution: University of Toronto
+  discipline: Social Work / Social Policy
+  discipline_group: Public Policy & Government
+- name: Mylène Riva
+  country: Canada
+  institution: McGill University
+  discipline: Health Geography / Population Health
+  discipline_group: Health Sciences
+- name: Amanda Buchnea
+  country: Canada
+  institution: University of Guelph / York University
+  discipline: Social Policy / Community Planning
+  discipline_group: Public Policy & Government
+- name: Kevin Manaugh
+  country: Canada
+  institution: McGill University
+  discipline: Geography / Transportation
+  discipline_group: Social Sciences & Planning
+- name: Samuel Duhaime-Morissette
+  country: Canada
+  institution: Polytechnique Montréal
+  discipline: Transportation Engineering
+  discipline_group: Engineering & Data
+- name: Mona Murphy
+  country: Canada
+  institution: University of Toronto
+  discipline: Engineering
+  discipline_group: Engineering & Data
+- name: Prianka Murthy
+  country: Canada
+  institution: University of Toronto
+  discipline: Engineering
+  discipline_group: Engineering & Data
+- name: Emma Seabrook
+  country: Canada
+  institution: University of Toronto
+  discipline: Engineering
+  discipline_group: Engineering & Data
