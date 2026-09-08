@@ -16,6 +16,15 @@ STATS = ROOT / "_data" / "collaborator_stats.yml"
 # --------------------------------------------------
 
 ALIASES = {
+    
+    "Berr{\\'\\i}os, Emilio": "Emilio Berríos",
+    "Guzman, LA": "Luis Ángel Guzmán",
+    "Larra{\\'\\i}n, Clemente": "Clemente Larraín",
+    "Lyeo, Joonsoo S": "Joonsoo Lyeo",
+    "Parga, Jo{\\~a}o Pedro Figueira Amorim": "João Pedro Figueira Amorim Parga",
+    "Riva, Myl{\\`e}ne": "Mylène Riva",
+    "Tironi, Mart{\\'\\i}n": "Martín Tironi",
+    
     # Ignacio
     "Tiznado Aitken, Ignacio": "Ignacio Tiznado-Aitken",
     "Tiznado, Ignacio": "Ignacio Tiznado-Aitken",
