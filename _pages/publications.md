@@ -390,7 +390,7 @@ nav_order: 2
         5 · 59
       </div>
       <div class="network-stat-label">
-        Broad fields · disciplinary areas
+        Fields · Disciplinary areas
       </div>
     </div>
 
