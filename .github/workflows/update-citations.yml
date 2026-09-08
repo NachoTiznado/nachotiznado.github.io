@@ -61,6 +61,9 @@ jobs:
           fi
           set -e
 
+      - name: Update collaborator statistics
+        run: python bin/update_collaborators.py
+  
       - name: Save new citations.yml hash
         id: after
         run: |
