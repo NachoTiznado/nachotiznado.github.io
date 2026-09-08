@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Became Regular Board Member of the World Society of Transport and Land Use Research (WSTLUR)
-date: 2015-11-07 16:11:00-0400
+date: 2024-10-29 16:11:00-0400
 inline: false
 related_posts: false
 ---
