@@ -8,15 +8,31 @@ nav_order: 4
 ---
 <div class="talks-page">
 
-<div class="talks-intro">
-  <p>A selection of conferences, invited lectures, keynote presentations, workshops, and guest lectures.</p>
-</div>
+{% assign talks_with_countries = site.data.talks | where_exp: "talk", "talk.country != nil and talk.country != ''" %}
+{% assign talks_with_cities = site.data.talks | where_exp: "talk", "talk.city != nil and talk.city != ''" %}
 
-<div class="talks-summary">
-  <div class="talks-summary-number">{{ site.data.talks | size }}</div>
-  <div class="talks-summary-label">Presentations · 2016–2026</div>
-</div>
+{% assign countries = talks_with_countries | map: "country" | uniq | size %}
+{% assign cities = talks_with_cities | map: "city" | uniq | size %}
+{% assign presentations = site.data.talks | size %}
 
+<div class="talks-stats">
+
+  <div class="talks-stat">
+    <div class="talks-stat-value">{{ presentations }}</div>
+    <div class="talks-stat-label">Presentations · 2016–2026</div>
+  </div>
+
+  <div class="talks-stat">
+    <div class="talks-stat-value">{{ countries }}</div>
+    <div class="talks-stat-label">Countries</div>
+  </div>
+
+  <div class="talks-stat">
+    <div class="talks-stat-value">{{ cities }}</div>
+    <div class="talks-stat-label">Cities</div>
+  </div>
+
+</div>
 
 <p class="talks-map-note">Explore the places where I have presented. Select a marker to see the presentations associated with that location.</p>
 
@@ -407,6 +423,56 @@ nav_order: 4
 .talk-map-popup-list strong {
   color: #000000;
   font-weight: 700;
+}
+
+/* Talks statistics — matching the Research page */
+
+.talks-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 1.5rem 0 2.5rem;
+  border-top: 1px solid var(--global-divider-color);
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.talks-stat {
+  padding: 2.25rem 1rem 2rem;
+  text-align: center;
+}
+
+.talks-stat + .talks-stat {
+  border-left: 1px solid var(--global-divider-color);
+}
+
+.talks-stat-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--global-text-color);
+}
+
+.talks-stat-label {
+  margin-top: 1.1rem;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+}
+
+@media (max-width: 768px) {
+  .talks-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .talks-stat + .talks-stat {
+    border-left: none;
+    border-top: 1px solid var(--global-divider-color);
+  }
+
+  .talks-stat {
+    padding: 1.5rem 1rem;
+  }
 }
 
 </style>
