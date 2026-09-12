@@ -22,6 +22,10 @@ nav_order: 4
 
 <div id="talks-map" class="talks-map" aria-label="Interactive map of presentation locations"></div>
 
+<div class="featured-talks-header">
+  <h2>Featured talks</h2>
+  <p>A selection of recent conference presentations, invited lectures, and other talks.</p>
+</div>
 
 <div class="featured-talks">
 {% for talk in site.data.talks %}
@@ -81,18 +85,136 @@ nav_order: 4
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
 <style>
-.talks-summary { display:flex; align-items:baseline; gap:1rem; margin:1.5rem 0 2rem; }
-.talks-summary-number { font-size:2.5rem; font-weight:700; line-height:1; }
-.talks-summary-label { opacity:.7; }
-.talks-map { width:100%; height:480px; border-radius:12px; overflow:hidden; margin:1rem 0 2.5rem; border:1px solid var(--global-divider-color); }
-.talks-map-note { opacity:.75; }
-.featured-talks { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1rem; margin:1rem 0 2.5rem; }
-.featured-talk { padding:1.15rem; border:1px solid var(--global-divider-color); border-radius:12px; }
-.featured-talk-year { font-size:.85rem; opacity:.65; margin-bottom:.35rem; }
-.featured-talk h3 { font-size:1.05rem; margin:.2rem 0 .7rem; }
-.featured-talk p { font-size:.9rem; opacity:.78; margin:0; }
-.talk-list { padding-left:1.25rem; }
-.talk-list li { margin-bottom:.8rem; }
+/* Talks summary — aligned with the Research page style */
+
+.talks-summary {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin: 1.5rem 0 2.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.talks-summary-number {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--global-text-color);
+}
+
+.talks-summary-label {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--global-text-color-light);
+}
+
+.talks-map {
+  width: 100%;
+  height: 480px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 1rem 0 2.5rem;
+  border: 1px solid var(--global-divider-color);
+}
+
+.talks-map-note {
+  opacity: 0.75;
+}
+
+.featured-talks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 2.5rem;
+}
+
+/* Featured talks heading */
+
+.featured-talks-header {
+  margin: 4rem 0 1.25rem;
+}
+
+.featured-talks-header h2 {
+  margin-bottom: 0.35rem;
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--global-text-color);
+}
+
+.featured-talks-header p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--global-text-color-light);
+}
+
+/* Featured talk cards */
+
+.featured-talk {
+  padding: 1.15rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 12px;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+/* Subtle alternating colours */
+
+.featured-talk:nth-child(3n + 1) {
+  background: color-mix(
+    in srgb,
+    #4f86c6 12%,
+    var(--global-bg-color)
+  );
+}
+
+.featured-talk:nth-child(3n + 2) {
+  background: color-mix(
+    in srgb,
+    #6ca56c 12%,
+    var(--global-bg-color)
+  );
+}
+
+.featured-talk:nth-child(3n + 3) {
+  background: color-mix(
+    in srgb,
+    #b58a54 12%,
+    var(--global-bg-color)
+  );
+}
+
+.featured-talk:hover {
+  transform: translateY(-3px);
+  border-color: var(--global-theme-color);
+}
+
+.featured-talk-year {
+  font-size: 0.85rem;
+  opacity: 0.65;
+  margin-bottom: 0.35rem;
+}
+
+.featured-talk h3 {
+  font-size: 1.05rem;
+  margin: 0.2rem 0 0.7rem;
+}
+
+.featured-talk p {
+  font-size: 0.9rem;
+  opacity: 0.78;
+  margin: 0;
+}
+
+.talk-list {
+  padding-left: 1.25rem;
+}
+
+.talk-list li {
+  margin-bottom: 0.8rem;
+}
 
 /* Talks list — match Research publication styling */
 
