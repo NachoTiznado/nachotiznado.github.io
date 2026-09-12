@@ -325,10 +325,10 @@ nav_order: 4
   }).setView([20, 0], 2);
 
   L.tileLayer(
-    'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+    'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}',
     {
       attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        'Tiles &copy; Esri — Sources: Esri, Garmin, USGS, NGA, EPA, USDA, NPS, and the GIS User Community',
       maxZoom: 19
     }
   ).addTo(map);
