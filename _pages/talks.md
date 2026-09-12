@@ -6,6 +6,7 @@ description: Conferences, invited lectures, keynote presentations, workshops, an
 nav: true
 nav_order: 4
 ---
+<div class="talks-page">
 
 <div class="talks-intro">
   <p>A selection of conferences, invited lectures, keynote presentations, workshops, and guest lectures.</p>
@@ -16,13 +17,11 @@ nav_order: 4
   <div class="talks-summary-label">Presentations · 2016–2026</div>
 </div>
 
-## Presentation map
 
 <p class="talks-map-note">Explore the places where I have presented. Select a marker to see the presentations associated with that location.</p>
 
 <div id="talks-map" class="talks-map" aria-label="Interactive map of presentation locations"></div>
 
-## Featured talks
 
 <div class="featured-talks">
 {% for talk in site.data.talks %}
@@ -35,7 +34,6 @@ nav_order: 4
 {% endfor %}
 </div>
 
-## All talks
 
 <div class="all-talks-header">
   <h2>All talks</h2>
@@ -159,6 +157,90 @@ nav_order: 4
   }
 }
 
+/* --------------------------------
+   Overall Talks page typography
+-------------------------------- */
+
+.talks-page {
+  font-family: inherit;
+  color: var(--global-text-color);
+}
+
+/* Main page title and description */
+.post-title,
+.page-title {
+  font-size: 1.35rem;
+  font-weight: 500;
+  margin-bottom: 0.35rem;
+}
+
+.post-description,
+.page-description {
+  color: var(--global-text-color-light);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/* Section headings throughout the page */
+.talks-page h2,
+.talks-page h3,
+.talks-page h4 {
+  font-family: inherit;
+  color: var(--global-text-color);
+}
+
+.talks-page h2 {
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.talks-page h3 {
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.talks-page h4 {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+/* Introductory text, notes, and descriptions */
+.talks-page p,
+.talks-page .talks-map-note,
+.talks-page .talks-summary-label {
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--global-text-color-light);
+}
+
+/* Summary number */
+.talks-page .talks-summary-number {
+  font-family: inherit;
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--global-text-color);
+}
+
+/* Featured talks */
+.talks-page .featured-talk h3 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--global-text-color);
+}
+
+.talks-page .featured-talk p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--global-text-color-light);
+}
+
+.talks-page .featured-talk-year {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--global-text-color-light);
+}
+
 </style>
 
 <script>
@@ -189,3 +271,5 @@ nav_order: 4
   });
 })();
 </script>
+
+</div>
