@@ -263,7 +263,7 @@
   lat: -33.4489
   lon: -70.6693
 - year: 2026
-  category: Invited lectures
+  category: Invited presentations
   citation: Measuring transport poverty and identifying equity standards in the transportation literature. “Transport Poverty and Accessibility” Workshop - European Commission Joint Research Centre (JRC), Seville, Spain. June 11th, 2026. [Keynote Speaker]
   featured: true
   city: Seville
@@ -271,7 +271,7 @@
   lat: 37.3891
   lon: -5.9845
 - year: 2026
-  category: Invited lectures
+  category: Invited presentations
   citation: 'Understanding Suppressed Travel: Definitions, Measurement, and Preliminary Evidence. Advancing Transport Equity: Insights from Canadian surveys, pilots and spatial analytics on traffic and logistics. Ghent University, Ghent, Belgium. April 29th, 2026. [Invited Talk]'
   featured: false
   city: Ghent
@@ -279,7 +279,7 @@
   lat: 51.0543
   lon: 3.7174
 - year: 2026
-  category: Invited lectures
+  category: Invited presentations
   citation: 'Measuring transport poverty: A comparative lens between Chile and Canada. Transforming Transportation, Washington DC, US. March 10th, 2026 [Invited Talk]'
   featured: true
   city: Washington
@@ -287,7 +287,7 @@
   lat: 38.9072
   lon: -77.0369
 - year: 2026
-  category: Invited lectures
+  category: Invited presentations
   citation: 'Measuring transport poverty in Chile: Evidence from Santiago and Concepción. Institute of Urban and Territorial Studies and Transport Justice Research Group, Pontificia Universidad Católica de Chile. Santiago, Chile. January 23rd, 2026 [Invited Talk]'
   featured: false
   city: Santiago
@@ -295,7 +295,7 @@
   lat: -33.4489
   lon: -70.6693
 - year: 2026
-  category: Invited lectures
+  category: Invited presentations
   citation: 'Transport poverty: from definition to action. Santiago’s Metropolitan Transit Agency. Santiago, Chile. January 29th, 2026 [Invited Talk]'
   featured: false
   city: Santiago
@@ -303,20 +303,20 @@
   lat: -33.4489
   lon: -70.6693
 - year: 2025
-  category: Invited lectures
+  category: Invited presentations
   citation: 'Setting boundaries and standards in transportation: In between principles of sufficientarianism and limitarianism. Occasional Transport Research Talks (Hosts: Nicholas Klein (Cornell University) and Kelcie Ralph (State University of New Jersey)). November 7th, 2025. Online [Invited Talk]'
   featured: false
 - year: 2025
-  category: Invited lectures
+  category: Invited presentations
   citation: 'Towards equitable and sustainable cities: Street allocation preferences, micromobility, the idea of limits and national data. Seminar at the Department of Geography, McGill University, Canada, October 28th, 2025. [Invited Talk]'
   featured: false
   country: Canada
 - year: 2025
-  category: Invited lectures
+  category: Invited presentations
   citation: Transport and social equity. Guest Lecture, CIV331 Transport I - Introduction to Urban Transportation Systems, Faculty of Applied Science and Engineering, Department of Civil and Mineral Engineering, University of Toronto. Online. [Guest Lecture]
   featured: false
 - year: 2025
-  category: Invited lectures
+  category: Invited presentations
   citation: 'The Mobilizing Justice''s Transportation Equity Dashboard: A platform for accessibility and equity analysis in transportation with open data. Transportation Seminar Series, Department of Civil Engineering, University of Chile. May 9th, 2025. Santiago, Chile. [Invited Talk]'
   featured: false
   city: Santiago
@@ -324,7 +324,7 @@
   lat: -33.4489
   lon: -70.6693
 - year: 2025
-  category: Invited lectures
+  category: Invited presentations
   citation: 'Suppressed travel: A fundamental perspective within urban mobility studies. Research Sessions, Institute of Urban and Territorial Studies, Pontificia Universidad Católica de Chile. Santiago, Chile. May 7th, 2025 [Invited Talk]'
   featured: false
   city: Santiago
@@ -332,7 +332,7 @@
   lat: -33.4489
   lon: -70.6693
 - year: 2025
-  category: Invited lectures
+  category: Invited presentations
   citation: 'Towards equitable and fair transportation: The case of the Mobilizing Justice Partnership in Canada. Special Seminar: 40 years of Urbanism Master’s program. Graduate School, Faculty of Architecture and Urbanism, University of Chile. March 29th, 2025. Santiago, Chile. [Invited Talk]'
   featured: false
   city: Santiago
@@ -340,7 +340,7 @@
   lat: -33.4489
   lon: -70.6693
 - year: 2025
-  category: Invited lectures
+  category: Invited presentations
   citation: 'Measuring transportation poverty in Canada: Design and implementation of a nationwide survey. Transportation Seminar, Department of Transport Engineering and Logistics, Pontificia Universidad Católica de Chile. Santiago, Chile. March 28th, 2025. [Invited Talk]'
   featured: false
   city: Santiago
@@ -348,7 +348,7 @@
   lat: -33.4489
   lon: -70.6693
 - year: 2025
-  category: Invited lectures
+  category: Invited presentations
   citation: 'Complete Communities in the GGH: Access to opportunities, the role of housing and impacts in quality of life. Presenter and moderator of “Building Equitable Cities” session. Planning Advancements in Transportation and Housing (PATH) Conference. Toronto, Canada. [Plenary Session]'
   featured: false
   city: Toronto
@@ -356,19 +356,19 @@
   lat: 43.6532
   lon: -79.3832
 - year: 2025
-  category: Invited lectures
+  category: Invited presentations
   citation: 'Car dependency in the urban margins: The influence of perceived accessibility on mode choice. Subcommittee on Sustainable and Equitable Access and Mobility for All (AME40(2)). Transportation Research Board Annual Meeting. Online [Invited Talk]'
   featured: true
 - year: 2024
-  category: Invited lectures
+  category: Invited presentations
   citation: Transport and social equity. Guest Lecture, CIV331 Transport I - Introduction to Urban Transportation Systems, Faculty of Applied Science and Engineering, Department of Civil and Mineral Engineering, University of Toronto. Online. [Guest Lecture]
   featured: false
 - year: 2024
-  category: Invited lectures
+  category: Invited presentations
   citation: 'Unequal periurban mobility: Travel patterns, modal choices and urban core dependence in Latin America. Webinar #7 – Webinar Series of the Pan American Society of Transport Research (PANAMSTR). August 6th, 2024. Online [Invited Talk]'
   featured: false
 - year: 2024
-  category: Invited lectures
+  category: Invited presentations
   citation: 'Transport equity: What do we know and what to do about it? Lunch and Learn - EDI Working Group, The Atmospheric Fund. Toronto, August 1st, 2024. Toronto, Canada [Invited Talk]'
   featured: false
   city: Toronto
@@ -376,7 +376,7 @@
   lat: 43.6532
   lon: -79.3832
 - year: 2024
-  category: Invited lectures
+  category: Invited presentations
   citation: The Mobilizing Justice Partnership. Transportation Seminar. Utrecht University, Department of Human Geography and Spatial Planning. July 1st, 2024. Utrecht, Netherlands. [Invited Talk]
   featured: false
   city: Utrecht
@@ -384,7 +384,7 @@
   lat: 52.0907
   lon: 5.1214
 - year: 2024
-  category: Invited lectures
+  category: Invited presentations
   citation: 'State of transportation equity in Canada & Mobilizing Justice Partnership. International summer course: “Planning the inclusive city: Bogota in comparative perspective”. Bogotá, Colombia. June 18th, 2024 [Invited Talk]'
   featured: false
   city: Bogotá
@@ -392,7 +392,7 @@
   lat: 4.711
   lon: -74.0721
 - year: 2024
-  category: Invited lectures
+  category: Invited presentations
   citation: Towards sustainable neighbourhoods? Tensions and heterogeneous transport priorities among suburban residents. Postdoc regular seminar series. School of Cities, University of Toronto. June 24th, 2024\. Toronto, Canada [Invited Talk]
   featured: false
   city: Toronto
@@ -400,7 +400,7 @@
   lat: 43.6532
   lon: -79.3832
 - year: 2024
-  category: Invited lectures
+  category: Invited presentations
   citation: Sustainable Cities and Transportation Talk. University of Sydney’s Dalyell Scholars Program. June 24th, 2024. Toronto, Canada. [Invited Talk]
   featured: false
   city: Toronto
@@ -408,15 +408,15 @@
   lat: 43.6532
   lon: -79.3832
 - year: 2024
-  category: Invited lectures
+  category: Invited presentations
   citation: 'State of Transport Equity in Canada & The Mobilizing Justice Partnership. TAC Symposium: Equity in Transportation. Transportation Equity 101 Session. May 30th, 2024. Online. [Invited Talk]'
   featured: false
 - year: 2024
-  category: Invited lectures
+  category: Invited presentations
   citation: Mobilizing Justice Partnership and the Transport Equity Accessibility Dashboard. Webinar “Practical applications of the Mobilizing Justice Transportation Equity Dashboard”. Canadian Institute of Planners (CIP). May 23rd, 2024. Online. [Invited Talk]
   featured: false
 - year: 2024
-  category: Invited lectures
+  category: Invited presentations
   citation: 'Transport equity: concepts, evidence and ideas around repurposing transport infrastructure. Institute for Inclusive Economies and Sustainable Livelihoods, University of Toronto Scarborough, May 9th, 2024. Toronto, Canada [Invited Talk]'
   featured: false
   city: Toronto
@@ -424,11 +424,11 @@
   lat: 43.6532
   lon: -79.3832
 - year: 2024
-  category: Invited lectures
+  category: Invited presentations
   citation: The Mobilizing Justice Partnership. Transport Association of Canada (TAC) Mobility Council, 2024 Spring Meeting, April 19th, 2024\. Online. [Invited Talk]
   featured: false
 - year: 2023
-  category: Invited lectures
+  category: Invited presentations
   citation: 'Road safety and bike sharing in Latin America: Pilot study using on-board smart sensors. Presentation to Tembici board. São Paulo, Brazil. [Invited Talk]'
   featured: false
   city: São Paulo
@@ -436,7 +436,7 @@
   lat: -23.5505
   lon: -46.6333
 - year: 2023
-  category: Invited lectures
+  category: Invited presentations
   citation: Mobilizing Justice Partnership. University of São Paulo's Postgraduate Program in Transport Engineering PPGET - POLI/USP. São Paulo, Brazil. [Invited Talk]
   featured: false
   city: São Paulo
@@ -444,11 +444,11 @@
   lat: -23.5505
   lon: -46.6333
 - year: 2023
-  category: Invited lectures
+  category: Invited presentations
   citation: Transport and social equity. Guest Lecture, CIV331 Transport I - Introduction to Urban Transportation Systems, Faculty of Applied Science and Engineering, Department of Civil and Mineral Engineering, University of Toronto. Online. [Guest Lecture]
   featured: false
 - year: 2023
-  category: Invited lectures
+  category: Invited presentations
   citation: 'Public transport accessibility, level of service, and equity: A multisource geospatial approach. Presentation at the Institute of Transportation Engineers - University of Toronto Student Chapter. Toronto, Canada. [Invited Talk]'
   featured: false
   city: Toronto
@@ -456,15 +456,15 @@
   lat: 43.6532
   lon: -79.3832
 - year: 2023
-  category: Invited lectures
+  category: Invited presentations
   citation: Transport and social equity. Guest Lecture, UBPL 750 – Introduction to transport planning, Urban Planning, University of Kansas. Online. [Guest Lecture]
   featured: false
 - year: 2023
-  category: Invited lectures
+  category: Invited presentations
   citation: 'Accessibility Dashboard: A Platform for Transport Equity and Accessibility Analysis. Second Annual Symposium, Mobilizing Justice. Online. [Invited Talk]'
   featured: false
 - year: 2023
-  category: Invited lectures
+  category: Invited presentations
   citation: Suburban Mobilities Cluster and the Scarborough Survey. Suburban Mobilities Day 2023. Mobility Month, Mobility Network, University of Toronto. Toronto, Canada. [Invited Talk]
   featured: false
   city: Toronto
@@ -472,11 +472,11 @@
   lat: 43.6532
   lon: -79.3832
 - year: 2023
-  category: Invited lectures
+  category: Invited presentations
   citation: 'Suburban Mobilities Cluster. Jackman Scholars-in-Residence Program 2023. Research Pathways: Clusters of Scholarly Prominence Program (CSPP), University of Toronto Scarborough. Online. [Invited Talk]'
   featured: false
 - year: 2023
-  category: Invited lectures
+  category: Invited presentations
   citation: 'Time poverty in transport research: A conceptual framework, metrics, and policies for achieving transport justice. Postdoc research seminar, School of Cities, University of Toronto. Toronto, Canada. [Invited Talk]'
   featured: false
   city: Toronto
@@ -484,27 +484,27 @@
   lat: 43.6532
   lon: -79.3832
 - year: 2023
-  category: Invited lectures
+  category: Invited presentations
   citation: 'Equity and justice conceptualizations, dimensions and standards for urban transportation planning: a scoping review. Session B: Theory and Applications Towards Data-Driven Standards. First Annual Symposium, Mobilizing Justice. Online. [Invited Talk]'
   featured: false
 - year: 2023
-  category: Invited lectures
+  category: Invited presentations
   citation: 'Transport equity: addressing accessibility on the urban fringes in Latin America. Brown Bag Lunch, World Bank. Online. [Invited Talk]'
   featured: false
 - year: 2022
-  category: Invited lectures
+  category: Invited presentations
   citation: 'Equidad en el acceso a oportunidades urbanas: un enfoque de métodos mixtos. Presentación a Alumnos del Programa de Doctorado de Transporte y Sociedad, Universidad de Chile (June, 2022). Online. [Invited Talk]'
   featured: false
 - year: 2022
-  category: Invited lectures
+  category: Invited presentations
   citation: 'Hacia un transporte equitativo e inclusivo: definiciones, indicadores y propuestas de política pública. Presentación Magistral en Primer Congreso Internacional de Ingeniería de Transporte - CIITVIAL 2022, Perú (May, 2022). Online. [Keynote Presentation]'
   featured: false
 - year: 2022
-  category: Invited lectures
+  category: Invited presentations
   citation: After COVID ends, will you continue riding transit? Motives behind prospective public transport use in Canada. What comes next? Equity and transportation during and after COVID-19. Mobilizing Justice Network. (May 2022). Online. [Invited Talk]
   featured: false
 - year: 2022
-  category: Invited lectures
+  category: Invited presentations
   citation: Accessibility, public transport, and equity. Guest lecture CIV516 Public Transit Operations and Planning. Department of Civil Engineering, University of Toronto Transportation Research Institute (UTTRI). Toronto, Canada. [Guest Lecture]
   featured: false
   city: Toronto
@@ -512,35 +512,35 @@
   lat: 43.6532
   lon: -79.3832
 - year: 2022
-  category: Invited lectures
+  category: Invited presentations
   citation: 'Transporte y equidad: abordando la accesibilidad en los márgenes urbanos. Presentación y panel final Proyecto CODS. Disponible en: https://www.youtube.com/watch?v=2IJb3Tpxh6c&ab\_channel=CENTROODS. Online. [Invited Talk]'
   featured: false
 - year: 2022
-  category: Invited lectures
+  category: Invited presentations
   citation: 'Suburban Mobilities Cluster. Jackman Scholars-in-Residence Program 2022. Research Pathways: Clusters of Scholarly Prominence Program (CSPP), University of Toronto Scarborough. Online. [Invited Talk]'
   featured: false
 - year: 2021
-  category: Invited lectures
+  category: Invited presentations
   citation: ¿Transporte justo? Estrés económico e inequidad en el acceso a oportunidades. VIII Encuentro Internacional de Innovación Tecnológica, Facultad de Ingeniería de la Universidad Francisco de Paula Santander Ocaña, Colombia (October, 2021). Online. [Keynote Presentation]
   featured: false
 - year: 2021
-  category: Invited lectures
+  category: Invited presentations
   citation: ¿Transporte justo? Estrés económico e inequidad en el acceso a oportunidades. Presentación Magistral en Congreso Nacional de Geomática, Infraestructura vial y transporte – CONGEVIT, Perú (September, 2021). Online. [Keynote Presentation]
   featured: false
 - year: 2021
-  category: Invited lectures
+  category: Invited presentations
   citation: ¿Transporte justo? Estrés económico e inequidad en el acceso a oportunidades. Presentación en Seminario MOVUS-LAB (Movilidad Urbana Sostenible), Universidad Nacional de Ingeniería, Perú (June, 2021\). Online. [Keynote Presentation]
   featured: false
 - year: 2021
-  category: Invited lectures
+  category: Invited presentations
   citation: 'Métodos mixtos, participación e interdisciplina. Charla Curso SUS2041 - Investigación-Acción: métodos para entender territorios en transformación, Instituto de Sustentabilidad, Pontificia Universidad Católica de Chile. April, 2021. Online. [Guest Lecture]'
   featured: false
 - year: 2020
-  category: Invited lectures
+  category: Invited presentations
   citation: Impactos de la movilidad urbana en la sustentabilidad de las ciudades. Charla Curso de Sustentabilidad Urbana, Universidad Mayor, Chile. November, 2020. Online. [Guest Lecture]
   featured: false
 - year: 2020
-  category: Invited lectures
+  category: Invited presentations
   citation: 'El rol del género dentro de la sustentabilidad social de las ciudades: El caso de Santiago de Chile. Charla Curso Género y Ciudad, Instituto de Estudios Urbanos y Territoriales (IEUT), Pontificia Universidad Católica de Chile. Santiago, Chile. [Guest Lecture]'
   featured: false
   city: Santiago
@@ -548,7 +548,7 @@
   lat: -33.4489
   lon: -70.6693
 - year: 2019
-  category: Invited lectures
+  category: Invited presentations
   citation: 'Transporte justo: El rol del acceso, género e inclusión. XXXIV Semana de la Empresa: La participación de las mujeres en el liderazgo empresarial y la movilidad. Tenerife, Spain. [Keynote Presentation]'
   featured: false
   city: Tenerife
@@ -556,7 +556,7 @@
   lat: 28.4636
   lon: -16.2518
 - year: 2019
-  category: Invited lectures
+  category: Invited presentations
   citation: How uneven is the urban mobility playing field? Inequalities among socioeconomic groups in Santiago de Chile. BRT+ Centre of Excellence General Assembly. Washington, USA. [Invited Talk]
   featured: false
   city: Washington
@@ -564,7 +564,7 @@
   lat: 38.9072
   lon: -77.0369
 - year: 2018
-  category: Invited lectures
+  category: Invited presentations
   citation: 'Transport Justice: Insights and challenges. BRT+ Centre of Excellence General Assembly. Washington, USA. [Invited Talk]'
   featured: false
   city: Washington
@@ -572,7 +572,7 @@
   lat: 38.9072
   lon: -77.0369
 - year: 2018
-  category: Invited lectures
+  category: Invited presentations
   citation: 'Ella se mueve segura: metodología del estudio cuantitativo en Santiago. International seminar “Ella se Mueve Segura: Mujer, Seguridad y Transporte Público". Metropolitan Region Government. Santiago, Chile. [Invited Talk]'
   featured: false
   city: Santiago
