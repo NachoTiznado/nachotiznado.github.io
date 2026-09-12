@@ -241,33 +241,198 @@ nav_order: 4
   color: var(--global-text-color-light);
 }
 
+/* Map popup styling */
+
+.talk-map-popup-container .leaflet-popup-content-wrapper,
+.talk-map-popup-container .leaflet-popup-tip {
+  background: #ffffff;
+}
+
+.talk-map-popup-container .leaflet-popup-content {
+  color: #000000;
+  margin: 14px 16px;
+  line-height: 1.5;
+}
+
+.talk-map-popup-title {
+  margin-bottom: 0.25rem;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.talk-map-popup-count {
+  margin-bottom: 0.7rem;
+  color: #000000;
+  font-size: 0.85rem;
+}
+
+.talk-map-popup-list {
+  max-height: 245px;
+  overflow-y: auto;
+  margin: 0;
+  padding-left: 1.25rem;
+  color: #000000;
+}
+
+.talk-map-popup-list li {
+  margin-bottom: 0.7rem;
+  color: #000000;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.talk-map-popup-list strong {
+  color: #000000;
+  font-weight: 700;
+}
+
 </style>
 
 <script>
 (function () {
   const talks = {{ site.data.talks | jsonify }};
-  const mappedTalks = talks.filter(t => t.lat !== undefined && t.lon !== undefined);
+
+  const mappedTalks = talks.filter(
+    t => t.lat !== undefined && t.lon !== undefined
+  );
+
   const grouped = {};
 
   mappedTalks.forEach(t => {
     const key = `${t.city || ''}, ${t.country || ''}`;
-    if (!grouped[key]) grouped[key] = { city: t.city || '', country: t.country || '', lat: t.lat, lon: t.lon, talks: [] };
+
+    if (!grouped[key]) {
+      grouped[key] = {
+        city: t.city || '',
+        country: t.country || '',
+        lat: t.lat,
+        lon: t.lon,
+        talks: []
+      };
+    }
+
     grouped[key].talks.push(t);
   });
 
-  const map = L.map('talks-map', { scrollWheelZoom: false }).setView([20, 0], 2);
-  L.tileLayer(
-  'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-  {
-    attribution: '&copy; OpenStreetMap contributors',
-    maxZoom: 19
-  }
-).addTo(map);
+  /*
+   * Map setup
+   */
+  const map = L.map('talks-map', {
+    scrollWheelZoom: false,
+    zoomControl: true,
+    worldCopyJump: true
+  }).setView([20, 0], 2);
 
+  L.tileLayer(
+    'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+    {
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      maxZoom: 19
+    }
+  ).addTo(map);
+
+  /*
+   * Red marker inspired by the original Leaflet/MapQuest style
+   */
+  const redMarkerIcon = L.icon({
+    iconUrl:
+      'data:image/svg+xml;charset=UTF-8,' +
+      encodeURIComponent(`
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="28"
+             height="40"
+             viewBox="0 0 28 40">
+
+          <path
+            d="M14 1
+               C6.8 1 1 6.8 1 14
+               C1 23.5 14 39 14 39
+               C14 39 27 23.5 27 14
+               C27 6.8 21.2 1 14 1Z"
+            fill="#e31b23"
+            stroke="#111111"
+            stroke-width="1.5"
+          />
+
+          <circle
+            cx="14"
+            cy="14"
+            r="5"
+            fill="#111111"
+          />
+        </svg>
+      `),
+    iconSize: [28, 40],
+    iconAnchor: [14, 40],
+    popupAnchor: [0, -36]
+  });
+
+  /*
+   * Basic HTML escaping for popup content
+   */
+  function escapeHtml(value) {
+    return String(value ?? '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;');
+  }
+
+  /*
+   * Create one marker for each location
+   */
   Object.values(grouped).forEach(place => {
-    const items = place.talks.map(t => `<li><strong>${t.year}</strong> — ${t.citation}</li>`).join('');
-    const popup = `<strong>${place.city}${place.country ? ', ' + place.country : ''}</strong><br><small>${place.talks.length} presentation(s)</small><ul>${items}</ul>`;
-    L.marker([place.lat, place.lon]).addTo(map).bindPopup(popup, { maxWidth: 420 });
+    const sortedTalks = place.talks.slice().sort((a, b) => {
+      return Number(b.year) - Number(a.year);
+    });
+
+    const locationName = [
+      place.city,
+      place.country
+    ]
+      .filter(Boolean)
+      .join(', ');
+
+    const items = sortedTalks
+      .map(t => {
+        return `
+          <li>
+            <strong>${escapeHtml(t.year)}</strong>
+            — ${escapeHtml(t.citation)}
+          </li>
+        `;
+      })
+      .join('');
+
+    const popup = `
+      <div class="talk-map-popup">
+        <div class="talk-map-popup-title">
+          ${escapeHtml(locationName)}
+        </div>
+
+        <div class="talk-map-popup-count">
+          ${sortedTalks.length} presentation${sortedTalks.length === 1 ? '' : 's'}
+        </div>
+
+        <ul class="talk-map-popup-list">
+          ${items}
+        </ul>
+      </div>
+    `;
+
+    L.marker([place.lat, place.lon], {
+      icon: redMarkerIcon
+    })
+      .addTo(map)
+      .bindPopup(popup, {
+        maxWidth: 460,
+        minWidth: 300,
+        maxHeight: 380,
+        className: 'talk-map-popup-container'
+      });
   });
 })();
 </script>
