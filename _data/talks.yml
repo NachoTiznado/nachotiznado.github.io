@@ -9,7 +9,7 @@
 - year: 2025
   category: Conference and symposia presentations
   citation: The Mobilizing Justice's Transportation Equity Dashboard. Lightning presentation. Data-Driven Mobility Analytics (DDMA) Workshop, McGill University, Montréal, Canada, October 27th, 2025. [Workshop presentation]
-  featured: true
+  featured: false
   city: Montréal
   country: Canada
   lat: 45.5017
@@ -265,7 +265,7 @@
 - year: 2026
   category: Invited lectures
   citation: Measuring transport poverty and identifying equity standards in the transportation literature. “Transport Poverty and Accessibility” Workshop - European Commission Joint Research Centre (JRC), Seville, Spain. June 11th, 2026. [Keynote Speaker]
-  featured: false
+  featured: true
   city: Seville
   country: Spain
   lat: 37.3891
@@ -281,7 +281,7 @@
 - year: 2026
   category: Invited lectures
   citation: 'Measuring transport poverty: A comparative lens between Chile and Canada. Transforming Transportation, Washington DC, US. March 10th, 2026 [Invited Talk]'
-  featured: false
+  featured: true
   city: Washington
   country: United States
   lat: 38.9072
