@@ -38,35 +38,33 @@ nav_order: 4
 ## All talks
 
 {% assign categories = "Conference and symposia presentations|Invited lectures" | split: "|" %}
+{% assign presentation_years = "2026,2025,2024,2023,2022,2021,2020,2019,2018,2017,2016" | split: "," %}
 
 {% for category in categories %}
+<h3>{{ category }}</h3>
 
-  <h3>{{ category }}</h3>
+{% for year in presentation_years %}
+{% assign year_has_talks = false %}
 
-  {% assign category_talks = site.data.talks | where: "category", category %}
+{% for talk in site.data.talks %}
+{% assign talk_year = talk.year | append: "" %}
+{% if talk.category == category and talk_year == year %}
+{% assign year_has_talks = true %}
+{% endif %}
+{% endfor %}
 
-  {% assign years = category_talks | map: "year" | uniq | sort | reverse %}
-
-  {% for year in years %}
-
-    <h4>{{ year }}</h4>
-
-    <ul class="talk-list">
-
-      {% for talk in category_talks %}
-
-        {% if talk.year == year %}
-
-          <li>{{ talk.citation }}</li>
-
-        {% endif %}
-
-      {% endfor %}
-
-    </ul>
-
-  {% endfor %}
-
+{% if year_has_talks %}
+<h4>{{ year }}</h4>
+<ul class="talk-list">
+{% for talk in site.data.talks %}
+{% assign talk_year = talk.year | append: "" %}
+{% if talk.category == category and talk_year == year %}
+<li>{{ talk.citation }}</li>
+{% endif %}
+{% endfor %}
+</ul>
+{% endif %}
+{% endfor %}
 {% endfor %}
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
