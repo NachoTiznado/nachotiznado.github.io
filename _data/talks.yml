@@ -33,7 +33,7 @@
 - year: 2024
   category: Conference and symposia presentations
   citation: Towards sustainable neighbourhoods? Tensions and heterogeneous transport priorities among suburban residents. 2024 World Symposium on Transport and Land Use Research. 17-20 June. Bogotá, Colombia. [Paper presentation]
-  featured: false
+  featured: true
   city: Bogotá
   country: Colombia
   lat: 4.711
@@ -358,7 +358,7 @@
 - year: 2025
   category: Invited lectures
   citation: 'Car dependency in the urban margins: The influence of perceived accessibility on mode choice. Subcommittee on Sustainable and Equitable Access and Mobility for All (AME40(2)). Transportation Research Board Annual Meeting. Online [Invited Talk]'
-  featured: false
+  featured: true
 - year: 2024
   category: Invited lectures
   citation: Transport and social equity. Guest Lecture, CIV331 Transport I - Introduction to Urban Transportation Systems, Faculty of Applied Science and Engineering, Department of Civil and Mineral Engineering, University of Toronto. Online. [Guest Lecture]
