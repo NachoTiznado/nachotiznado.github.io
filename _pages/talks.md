@@ -38,19 +38,37 @@ nav_order: 4
 ## All talks
 
 {% assign categories = "Conference and symposia presentations|Invited lectures" | split: "|" %}
+{% assign presentation_years = "2026,2025,2024,2023,2022,2021,2020,2019,2018,2017,2016" | split: "," %}
+
 {% for category in categories %}
   <h3>{{ category }}</h3>
-  {% assign category_talks = site.data.talks | where: "category", category %}
-  {% assign years = category_talks | map: "year" | uniq | sort | reverse %}
-  {% for year in years %}
-    <h4>{{ year }}</h4>
-    <ul class="talk-list">
-      {% for talk in category_talks %}
-        {% if talk.year == year %}
-        <li>{{ talk.citation }}</li>
+
+  {% for year in presentation_years %}
+    {% assign year_has_talks = false %}
+
+    {% for talk in site.data.talks %}
+      {% if talk.category == category %}
+        {% assign talk_year = talk.year | append: "" %}
+        {% if talk_year == year %}
+          {% assign year_has_talks = true %}
         {% endif %}
-      {% endfor %}
-    </ul>
+      {% endif %}
+    {% endfor %}
+
+    {% if year_has_talks %}
+      <h4>{{ year }}</h4>
+
+      <ul class="talk-list">
+        {% for talk in site.data.talks %}
+          {% if talk.category == category %}
+            {% assign talk_year = talk.year | append: "" %}
+            {% if talk_year == year %}
+              <li>{{ talk.citation }}</li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    {% endif %}
   {% endfor %}
 {% endfor %}
 
@@ -58,18 +76,83 @@ nav_order: 4
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
 <style>
-.talks-summary { display:flex; align-items:baseline; gap:1rem; margin:1.5rem 0 2rem; }
-.talks-summary-number { font-size:2.5rem; font-weight:700; line-height:1; }
-.talks-summary-label { opacity:.7; }
-.talks-map { width:100%; height:480px; border-radius:12px; overflow:hidden; margin:1rem 0 2.5rem; border:1px solid var(--global-divider-color); }
-.talks-map-note { opacity:.75; }
-.featured-talks { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1rem; margin:1rem 0 2.5rem; }
-.featured-talk { padding:1.15rem; border:1px solid var(--global-divider-color); border-radius:12px; }
-.featured-talk-year { font-size:.85rem; opacity:.65; margin-bottom:.35rem; }
-.featured-talk h3 { font-size:1.05rem; margin:.2rem 0 .7rem; }
-.featured-talk p { font-size:.9rem; opacity:.78; margin:0; }
-.talk-list { padding-left:1.25rem; }
-.talk-list li { margin-bottom:.8rem; }
+/* Softer, more polished map appearance */
+.talks-map {
+  width: 100%;
+  height: 500px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 1rem 0 2.5rem;
+  border: 1px solid var(--global-divider-color);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Improve marker popups */
+.talk-map-popup-container .leaflet-popup-content-wrapper,
+.talk-map-popup-container .leaflet-popup-tip {
+  background: #ffffff;
+}
+
+.talk-map-popup-container .leaflet-popup-content {
+  color: #000000;
+  margin: 14px 16px;
+  line-height: 1.5;
+}
+
+.talk-map-popup {
+  color: #000000;
+  font-size: 0.9rem;
+}
+
+.talk-map-popup-title {
+  color: #000000;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.15rem;
+}
+
+.talk-map-popup-count {
+  color: #000000;
+  font-size: 0.82rem;
+  margin-bottom: 0.65rem;
+  opacity: 0.7;
+}
+
+.talk-map-popup-list {
+  max-height: 245px;
+  overflow-y: auto;
+  padding-left: 1.15rem;
+  margin: 0;
+}
+
+.talk-map-popup-list li {
+  color: #000000;
+  margin-bottom: 0.7rem;
+  padding-right: 0.35rem;
+}
+
+.talk-map-popup-list strong {
+  color: #000000;
+  font-weight: 700;
+}
+
+.talk-map-popup-list span {
+  color: #000000;
+}
+
+/* Ensure the popup scrollbar is visually usable */
+.talk-map-popup-list::-webkit-scrollbar {
+  width: 7px;
+}
+
+.talk-map-popup-list::-webkit-scrollbar-thumb {
+  background: #b5b5b5;
+  border-radius: 10px;
+}
+
+.talk-map-popup-list::-webkit-scrollbar-track {
+  background: #eeeeee;
+}
 </style>
 
 <script>
@@ -80,19 +163,74 @@ nav_order: 4
 
   mappedTalks.forEach(t => {
     const key = `${t.city || ''}, ${t.country || ''}`;
-    if (!grouped[key]) grouped[key] = { city: t.city || '', country: t.country || '', lat: t.lat, lon: t.lon, talks: [] };
+
+    if (!grouped[key]) {
+      grouped[key] = {
+        city: t.city || '',
+        country: t.country || '',
+        lat: t.lat,
+        lon: t.lon,
+        talks: []
+      };
+    }
+
     grouped[key].talks.push(t);
   });
 
-  const map = L.map('talks-map', { scrollWheelZoom: false }).setView([20, 0], 2);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; OpenStreetMap contributors'
-  }).addTo(map);
+  const map = L.map('talks-map', {
+    scrollWheelZoom: false,
+    zoomControl: true
+  }).setView([20, 0], 2);
+
+  /*
+   * CartoDB Voyager provides a softer, cleaner map style
+   * than the standard OpenStreetMap tiles.
+   */
+  L.tileLayer(
+    'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
+    {
+      attribution:
+        '&copy; OpenStreetMap contributors &copy; CARTO',
+      subdomains: 'abcd',
+      maxZoom: 19
+    }
+  ).addTo(map);
 
   Object.values(grouped).forEach(place => {
-    const items = place.talks.map(t => `<li><strong>${t.year}</strong> — ${t.citation}</li>`).join('');
-    const popup = `<strong>${place.city}${place.country ? ', ' + place.country : ''}</strong><br><small>${place.talks.length} presentation(s)</small><ul>${items}</ul>`;
-    L.marker([place.lat, place.lon]).addTo(map).bindPopup(popup, { maxWidth: 420 });
+    const items = place.talks
+      .sort((a, b) => b.year - a.year)
+      .map(t => `
+        <li>
+          <strong>${t.year}</strong>
+          <span>${t.citation}</span>
+        </li>
+      `)
+      .join('');
+
+    const popup = `
+      <div class="talk-map-popup">
+        <div class="talk-map-popup-title">
+          ${place.city}${place.country ? ', ' + place.country : ''}
+        </div>
+
+        <div class="talk-map-popup-count">
+          ${place.talks.length} presentation${place.talks.length === 1 ? '' : 's'}
+        </div>
+
+        <ul class="talk-map-popup-list">
+          ${items}
+        </ul>
+      </div>
+    `;
+
+    L.marker([place.lat, place.lon])
+      .addTo(map)
+      .bindPopup(popup, {
+        maxWidth: 460,
+        minWidth: 300,
+        maxHeight: 360,
+        className: 'talk-map-popup-container'
+      });
   });
 })();
 </script>
