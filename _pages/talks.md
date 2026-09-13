@@ -149,6 +149,18 @@ nav_order: 4
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
 <style>
+
+/* Talks map */
+
+.talks-map {
+  width: 100%;
+  height: 480px;
+  margin: 1rem 0 2.5rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
 /* Featured talk cards */
 
 .featured-talks {
