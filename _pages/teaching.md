@@ -28,11 +28,10 @@ nav_order: 3
     </p>
 
     <p>
-      I continue teaching because I value the opportunity to support students
-      as they develop new skills, discover their interests, and become more
-      independent thinkers. Whether introducing students to analytical methods,
-      programming, transportation geography, or questions of urban justice,
-      my goal is to create a learning environment that is rigorous, supportive,
+      I value the opportunity to support students as they develop new skills, discover their interests, and become more
+      independent thinkers. In my own practice, whether I'm introducing students to analytical methods,
+      programming skills, transportation geography, planning challenges, or questions of urban justice,
+      my goal is to create a learning environment that is rigorous, open, supportive,
       and connected to contemporary social and environmental issues.
     </p>
 
@@ -44,7 +43,7 @@ nav_order: 3
   <div class="teaching-section-header student-perspectives-header">
     <h2>Student perspectives</h2>
     <p>
-      A reminder of the positive impact that teaching and learning can have.
+      A self-reminder of the positive impact that teaching and learning can have. A mental note on why I continue teaching.
     </p>
   </div>
 
@@ -93,8 +92,6 @@ nav_order: 3
 
     <section id="undergraduate-teaching" class="teaching-level-card">
 
-      <div class="teaching-level-number">01</div>
-
       <h3>Undergraduate teaching</h3>
 
       <p class="teaching-level-description">
@@ -110,6 +107,7 @@ nav_order: 3
           <li>
             <strong>Introductory Analytical Methods</strong>
             <span>GGR270</span>
+            <span>Department of Geography and Planning</span>
             <em>Fall 2024, Fall 2025, Fall 2026</em>
           </li>
 
@@ -160,8 +158,6 @@ nav_order: 3
     <!-- Graduate teaching -->
 
     <section id="graduate-teaching" class="teaching-level-card">
-
-      <div class="teaching-level-number">02</div>
 
       <h3>Graduate teaching</h3>
 
