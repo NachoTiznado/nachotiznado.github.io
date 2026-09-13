@@ -17,6 +17,7 @@ nav_order: 3
   </div>
 
   <div class="teaching-reflection">
+
     <p>
       Teaching is an opportunity to help students develop the knowledge,
       confidence, and curiosity to understand and engage with the world around
@@ -34,6 +35,7 @@ nav_order: 3
       my goal is to create a learning environment that is rigorous, supportive,
       and connected to contemporary social and environmental issues.
     </p>
+
   </div>
 
 
@@ -83,160 +85,143 @@ nav_order: 3
   </div>
 
 
-  <!-- Teaching level cards -->
+  <!-- Undergraduate and graduate teaching cards -->
 
   <div class="teaching-levels">
 
-    <a href="#undergraduate-teaching" class="teaching-level-card">
+    <!-- Undergraduate teaching -->
+
+    <section id="undergraduate-teaching" class="teaching-level-card">
+
       <div class="teaching-level-number">01</div>
+
       <h3>Undergraduate teaching</h3>
-      <p>
+
+      <p class="teaching-level-description">
         Foundational and applied teaching in analytical methods, GIS,
         programming, transportation geography, and planning.
       </p>
-      <span class="teaching-level-link">View undergraduate courses →</span>
-    </a>
 
-    <a href="#graduate-teaching" class="teaching-level-card">
+      <div class="teaching-institution">
+        <h4>University of Toronto</h4>
+
+        <ul class="teaching-course-list">
+
+          <li>
+            <strong>Introductory Analytical Methods</strong>
+            <span>GGR270</span>
+            <em>Fall 2024, Fall 2025, Fall 2026</em>
+          </li>
+
+          <li>
+            <strong>Introduction to Programming in GIS</strong>
+            <span>GGR375</span>
+            <em>Fall 2024, Fall 2025, Winter 2027</em>
+          </li>
+
+          <li>
+            <strong>Transportation Geography and Planning</strong>
+            <span>GGR424</span>
+            <em>Fall 2026</em>
+          </li>
+
+          <li>
+            <strong>Transportation Geography</strong>
+            <span>GGRC12</span>
+            <em>Winter 2024</em>
+          </li>
+
+          <li>
+            <strong>Seminar in Selected Topics in Human Geography</strong>
+            <span>GGRD12 · Suburban Mobilities</span>
+            <em>Summer 2022</em>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="teaching-institution">
+        <h4>Pontificia Universidad Católica de Chile</h4>
+
+        <ul class="teaching-course-list">
+
+          <li>
+            <strong>Transportation Engineering Workshop</strong>
+            <span>ICT2154</span>
+            <em>Fall 2020, Fall 2021</em>
+          </li>
+
+        </ul>
+      </div>
+
+    </section>
+
+
+    <!-- Graduate teaching -->
+
+    <section id="graduate-teaching" class="teaching-level-card">
+
       <div class="teaching-level-number">02</div>
+
       <h3>Graduate teaching</h3>
-      <p>
+
+      <p class="teaching-level-description">
         Advanced teaching on transport and urban form, planning methods,
         urban transport policies, food delivery, and transport justice.
       </p>
-      <span class="teaching-level-link">View graduate courses →</span>
-    </a>
+
+      <div class="teaching-institution">
+        <h4>University of Toronto</h4>
+
+        <ul class="teaching-course-list">
+
+          <li>
+            <strong>Transportation and Urban Form</strong>
+            <span>JPG1554</span>
+            <em>Winter 2022, Winter 2026</em>
+          </li>
+
+          <li>
+            <strong>Advanced Seminars in Selected Topics</strong>
+            <span>
+              JPG2150 · The Geography of Food Delivery: Gig Work, Mobility and
+              Urban Space
+            </span>
+            <em>Winter 2026</em>
+          </li>
+
+          <li>
+            <strong>Planning Methods II</strong>
+            <span>PLA1105</span>
+            <em>Winter 2025</em>
+          </li>
+
+          <li>
+            <strong>Urban Land Use and Transport Policies</strong>
+            <span>PPH2017</span>
+            <em>Fall 2023</em>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="teaching-institution">
+        <h4>Pontificia Universidad Católica de Chile</h4>
+
+        <ul class="teaching-course-list">
+
+          <li>
+            <strong>Transport and Social Justice</strong>
+            <span>ICT3800</span>
+            <em>Spring 2021</em>
+          </li>
+
+        </ul>
+      </div>
+
+    </section>
 
   </div>
-
-
-  <!-- Undergraduate teaching -->
-
-  <section id="undergraduate-teaching" class="teaching-course-section">
-
-    <div class="teaching-section-header">
-      <h2>Undergraduate teaching</h2>
-      <p>Courses taught at the undergraduate level.</p>
-    </div>
-
-    <div class="teaching-institution">
-      <h3>University of Toronto</h3>
-
-      <ul class="teaching-course-list">
-
-        <li>
-          <strong>Introductory Analytical Methods</strong>
-          <span>GGR270</span>
-          <em>Fall 2024, Fall 2025, Fall 2026</em>
-        </li>
-
-        <li>
-          <strong>Introduction to Programming in GIS</strong>
-          <span>GGR375</span>
-          <em>Fall 2024, Fall 2025, Winter 2027</em>
-        </li>
-
-        <li>
-          <strong>Transportation Geography and Planning</strong>
-          <span>GGR424</span>
-          <em>Fall 2026</em>
-        </li>
-
-        <li>
-          <strong>Transportation Geography</strong>
-          <span>GGRC12</span>
-          <em>Winter 2024</em>
-        </li>
-
-        <li>
-          <strong>
-            Seminar in Selected Topics in Human Geography
-          </strong>
-          <span>GGRD12 · Suburban Mobilities</span>
-          <em>Summer 2022</em>
-        </li>
-
-      </ul>
-    </div>
-
-    <div class="teaching-institution">
-      <h3>Pontificia Universidad Católica de Chile</h3>
-
-      <ul class="teaching-course-list">
-
-        <li>
-          <strong>Transportation Engineering Workshop</strong>
-          <span>ICT2154</span>
-          <em>Fall 2020, Fall 2021</em>
-        </li>
-
-      </ul>
-    </div>
-
-  </section>
-
-
-  <!-- Graduate teaching -->
-
-  <section id="graduate-teaching" class="teaching-course-section">
-
-    <div class="teaching-section-header">
-      <h2>Graduate teaching</h2>
-      <p>Courses taught at the graduate level.</p>
-    </div>
-
-    <div class="teaching-institution">
-      <h3>University of Toronto</h3>
-
-      <ul class="teaching-course-list">
-
-        <li>
-          <strong>Transportation and Urban Form</strong>
-          <span>JPG1554</span>
-          <em>Winter 2022, Winter 2026</em>
-        </li>
-
-        <li>
-          <strong>
-            Advanced Seminars in Selected Topics
-          </strong>
-          <span>
-            JPG2150 · The Geography of Food Delivery: Gig Work, Mobility and
-            Urban Space
-          </span>
-          <em>Winter 2026</em>
-        </li>
-
-        <li>
-          <strong>Planning Methods II</strong>
-          <span>PLA1105</span>
-          <em>Winter 2025</em>
-        </li>
-
-        <li>
-          <strong>Urban Land Use and Transport Policies</strong>
-          <span>PPH2017</span>
-          <em>Fall 2023</em>
-        </li>
-
-      </ul>
-    </div>
-
-    <div class="teaching-institution">
-      <h3>Pontificia Universidad Católica de Chile</h3>
-
-      <ul class="teaching-course-list">
-
-        <li>
-          <strong>Transport and Social Justice</strong>
-          <span>ICT3800</span>
-          <em>Spring 2021</em>
-        </li>
-
-      </ul>
-    </div>
-
-  </section>
 
 </div>
 
@@ -303,7 +288,7 @@ nav_order: 3
 
 .student-quotes {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
   margin: 1.5rem 0 3rem;
 }
@@ -339,20 +324,17 @@ nav_order: 3
 
 .teaching-levels {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
   margin: 1.5rem 0 3rem;
+  align-items: start;
 }
 
 .teaching-level-card {
-  display: block;
+  min-width: 0;
   padding: 1.5rem;
   border: 1px solid var(--global-divider-color);
   border-radius: 12px;
-  text-decoration: none;
-  transition:
-    transform 0.2s ease,
-    border-color 0.2s ease;
 }
 
 .teaching-level-card:nth-child(1) {
@@ -371,12 +353,6 @@ nav_order: 3
   );
 }
 
-.teaching-level-card:hover {
-  transform: translateY(-3px);
-  border-color: var(--global-theme-color);
-  text-decoration: none;
-}
-
 .teaching-level-number {
   margin-bottom: 1rem;
   font-size: 0.85rem;
@@ -390,36 +366,29 @@ nav_order: 3
   color: var(--global-text-color);
 }
 
-.teaching-level-card p {
-  margin-bottom: 1.25rem;
+.teaching-level-description {
+  margin-bottom: 2rem;
   font-size: 0.95rem;
   line-height: 1.6;
   color: var(--global-text-color-light);
 }
 
-.teaching-level-link {
-  font-size: 0.85rem;
-  color: var(--global-theme-color);
-}
-
 
 /* --------------------------------
-   Course sections
+   Institutions and course lists
 -------------------------------- */
 
-.teaching-course-section {
-  scroll-margin-top: 2rem;
-  margin-bottom: 3.5rem;
-}
-
 .teaching-institution {
-  margin: 2rem 0 2.5rem;
+  margin: 2rem 0 0;
 }
 
-.teaching-institution h3 {
+.teaching-institution h4 {
   margin-bottom: 1rem;
-  font-size: 1.15rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--global-divider-color);
+  font-size: 0.98rem;
   font-weight: 500;
+  line-height: 1.5;
   color: var(--global-text-color);
 }
 
@@ -431,14 +400,18 @@ nav_order: 3
 
 .teaching-course-list li {
   margin-bottom: 1rem;
-  padding: 1rem 1.15rem;
+  padding-left: 0.9rem;
   border-left: 2px solid var(--global-divider-color);
+}
+
+.teaching-course-list li:last-child {
+  margin-bottom: 0;
 }
 
 .teaching-course-list li strong {
   display: block;
   margin-bottom: 0.25rem;
-  font-size: 0.98rem;
+  font-size: 0.92rem;
   font-weight: 500;
   line-height: 1.5;
   color: var(--global-text-color);
@@ -447,14 +420,16 @@ nav_order: 3
 .teaching-course-list li span {
   display: block;
   margin-bottom: 0.25rem;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
   color: var(--global-text-color-light);
 }
 
 .teaching-course-list li em {
   display: block;
-  font-size: 0.88rem;
+  font-size: 0.82rem;
   font-style: normal;
+  line-height: 1.5;
   color: var(--global-text-color-light);
 }
 
@@ -463,13 +438,13 @@ nav_order: 3
    Responsive layout
 -------------------------------- */
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
-  .student-quotes {
+  .teaching-levels {
     grid-template-columns: 1fr;
   }
 
-  .teaching-levels {
+  .student-quotes {
     grid-template-columns: 1fr;
   }
 
