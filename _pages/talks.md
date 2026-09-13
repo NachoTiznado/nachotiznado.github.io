@@ -36,13 +36,6 @@ nav_order: 4
 
 <!-- Presentation photos -->
 
-<div class="presentation-photos-header">
-  <h2>Photos from presentations</h2>
-  <p>
-    Selected moments from conferences, invited lectures, and academic presentations.
-  </p>
-</div>
-
 <div class="presentation-feature-grid">
 
   <figure class="presentation-feature-main">
@@ -63,7 +56,7 @@ nav_order: 4
 
   <figure class="presentation-feature-secondary">
     <img
-      src="{{ '/assets/img/presentation-1.jpg' | relative_url }}"
+      src="{{ '/assets/img/presentation-1.jpeg' | relative_url }}"
       alt="Presenting Mobilizing Justice research at Utrecht University (2024)"
       loading="lazy"
     >
@@ -71,7 +64,7 @@ nav_order: 4
 
   <figure class="presentation-feature-secondary">
     <img
-      src="{{ '/assets/img/presentations-4.jpg' | relative_url }}"
+      src="{{ '/assets/img/presentation-4.jpeg' | relative_url }}"
       alt="Presenting research on time poverty at NECTAR Conference in Toronto (2022)"
       loading="lazy"
     >
