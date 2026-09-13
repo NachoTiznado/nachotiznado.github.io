@@ -1,11 +1,20 @@
 ---
 layout: page
 permalink: /publications/
+title: Research
+description: An overview of my research profile, themes, collaborations, and publications.
 nav: true
 nav_order: 2
 ---
 
 <style>
+
+  .page-title,
+  .page-description,
+  .post-title,
+  .post-description {
+    display: none;
+  }
 
 .research-summary {
   margin: 0 auto 3rem;
