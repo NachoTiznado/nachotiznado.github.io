@@ -82,31 +82,25 @@ nav_order: 4
 </div>
 
 <div class="featured-talks">
+  {% for talk in site.data.talks %}
+    {% if talk.featured %}
+      <article class="featured-talk">
 
-  {% assign featured_talks = site.data.talks | where: "featured", true %}
+        <div class="featured-talk-year">
+          {{ talk.year }}
+        </div>
 
-  {% for talk in featured_talks %}
+        <h3>
+          {{ talk.title }}
+        </h3>
 
-    <article class="featured-talk">
+        <p>
+          {{ talk.event }}
+        </p>
 
-      <div class="featured-talk-meta">
-        <span>{{ talk.year }}</span>
-        {% if talk.type %}
-          <span>·</span>
-          <span>{{ talk.type }}</span>
-        {% endif %}
-      </div>
-
-      <h3>{{ talk.title }}</h3>
-
-      {% if talk.event %}
-        <p class="featured-talk-event">{{ talk.event }}</p>
-      {% endif %}
-
-    </article>
-
+      </article>
+    {% endif %}
   {% endfor %}
-
 </div>
 
 <div class="all-talks-header">
