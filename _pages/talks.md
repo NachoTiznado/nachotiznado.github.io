@@ -87,7 +87,7 @@ nav_order: 4
       <article class="featured-talk">
 
         <div class="featured-talk-year">
-          {{ talk.year }}
+          {{ talk.year }} · {{ talk.type }}
         </div>
 
         <h3>
