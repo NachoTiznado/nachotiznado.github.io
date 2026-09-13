@@ -34,6 +34,51 @@ nav_order: 4
 
 </div>
 
+<!-- Presentation photos -->
+
+<div class="presentation-photos-header">
+  <h2>Photos from presentations</h2>
+  <p>
+    Selected moments from conferences, invited lectures, and academic presentations.
+  </p>
+</div>
+
+<div class="presentation-feature-grid">
+
+  <figure class="presentation-feature-main">
+    <img
+      src="{{ '/assets/img/presentation-7.jpeg' | relative_url }}"
+      alt="Presenting at the NECTAR Conference in Munich (2026)"
+      loading="lazy"
+    >
+  </figure>
+
+  <figure class="presentation-feature-secondary">
+    <img
+      src="{{ '/assets/img/presentation-5.jpeg' | relative_url }}"
+      alt="Presenting at Transforming Transportation, a World Bank Group event (2026)"
+      loading="lazy"
+    >
+  </figure>
+
+  <figure class="presentation-feature-secondary">
+    <img
+      src="{{ '/assets/img/presentation-1.jpg' | relative_url }}"
+      alt="Presenting Mobilizing Justice research at Utrecht University (2024)"
+      loading="lazy"
+    >
+  </figure>
+
+  <figure class="presentation-feature-secondary">
+    <img
+      src="{{ '/assets/img/presentations-4.jpg' | relative_url }}"
+      alt="Presenting research on time poverty at NECTAR Conference in Toronto (2022)"
+      loading="lazy"
+    >
+  </figure>
+
+</div>
+
 <p class="talks-map-note">Explore the places where I have presented. Select a marker to see the presentations associated with that location.</p>
 
 <div id="talks-map" class="talks-map" aria-label="Interactive map of presentation locations"></div>
@@ -472,6 +517,94 @@ nav_order: 4
 
   .talks-stat {
     padding: 1.5rem 1rem;
+  }
+}
+
+/* Presentation photo collage */
+
+.presentation-photos-header {
+  margin: 4rem 0 1.25rem;
+}
+
+.presentation-photos-header h2 {
+  margin-bottom: 0.35rem;
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--global-text-color);
+}
+
+.presentation-photos-header p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--global-text-color-light);
+}
+
+.presentation-feature-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin: 1.5rem 0 3rem;
+}
+
+.presentation-feature-grid figure {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  background: var(--global-bg-color);
+}
+
+.presentation-feature-main {
+  grid-column: 1;
+  grid-row: 1 / span 3;
+  min-height: 0;
+}
+
+.presentation-feature-secondary {
+  grid-column: 2;
+  min-height: 0;
+}
+
+.presentation-feature-grid img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.25s ease;
+}
+
+.presentation-feature-grid figure:hover img {
+  transform: scale(1.015);
+}
+
+/* Slightly favour the speaker in the vertical image */
+.presentation-feature-main img {
+  object-position: center center;
+}
+
+@media (max-width: 768px) {
+  .presentation-feature-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+
+  .presentation-feature-main,
+  .presentation-feature-secondary {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .presentation-feature-main img,
+  .presentation-feature-secondary img {
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  .presentation-feature-main img {
+    aspect-ratio: 3 / 4;
   }
 }
 
