@@ -1,8 +1,6 @@
 ---
 layout: page
 permalink: /publications/
-title: Research
-description: An overview of my research profile, themes, collaborations, and publications.
 nav: true
 nav_order: 2
 ---
