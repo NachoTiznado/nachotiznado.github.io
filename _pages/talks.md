@@ -72,7 +72,10 @@ nav_order: 4
 
 </div>
 
-<p class="talks-map-note">Explore the places where I have presented. Select a marker to see the presentations associated with that location.</p>
+<div class="talks-map-note">
+  <h2>Geographic distribution of presentations</h2>
+  <p>Explore the places where I have presented. Select a marker to see the presentations associated with that location.</p>
+</div>
 
 <div id="talks-map" class="talks-map" aria-label="Interactive map of presentation locations"></div>
 
