@@ -82,16 +82,32 @@ nav_order: 4
 </div>
 
 <div class="featured-talks">
-{% for talk in site.data.talks %}
-  {% if talk.featured %}
-  <article class="featured-talk">
-    <div class="featured-talk-year">{{ talk.year }}</div>
-    <h3>{{ talk.citation }}</h3>
-  </article>
-  {% endif %}
-{% endfor %}
-</div>
 
+  {% assign featured_talks = site.data.talks | where: "featured", true %}
+
+  {% for talk in featured_talks %}
+
+    <article class="featured-talk">
+
+      <div class="featured-talk-meta">
+        <span>{{ talk.year }}</span>
+        {% if talk.type %}
+          <span>·</span>
+          <span>{{ talk.type }}</span>
+        {% endif %}
+      </div>
+
+      <h3>{{ talk.title }}</h3>
+
+      {% if talk.event %}
+        <p class="featured-talk-event">{{ talk.event }}</p>
+      {% endif %}
+
+    </article>
+
+  {% endfor %}
+
+</div>
 
 <div class="all-talks-header">
   <h2>All talks</h2>
@@ -139,42 +155,7 @@ nav_order: 4
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
 <style>
-/* Talks summary — aligned with the Research page style */
-
-.talks-summary {
-  display: flex;
-  align-items: baseline;
-  gap: 0.75rem;
-  margin: 1.5rem 0 2.5rem;
-  padding-bottom: 1.25rem;
-  border-bottom: 1px solid var(--global-divider-color);
-}
-
-.talks-summary-number {
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 1;
-  color: var(--global-text-color);
-}
-
-.talks-summary-label {
-  font-size: 0.9rem;
-  font-weight: 400;
-  color: var(--global-text-color-light);
-}
-
-.talks-map {
-  width: 100%;
-  height: 480px;
-  border-radius: 12px;
-  overflow: hidden;
-  margin: 1rem 0 2.5rem;
-  border: 1px solid var(--global-divider-color);
-}
-
-.talks-map-note {
-  opacity: 0.75;
-}
+/* Featured talk cards */
 
 .featured-talks {
   display: grid;
@@ -182,28 +163,6 @@ nav_order: 4
   gap: 1rem;
   margin: 1rem 0 2.5rem;
 }
-
-/* Featured talks heading */
-
-.featured-talks-header {
-  margin: 4rem 0 1.25rem;
-}
-
-.featured-talks-header h2 {
-  margin-bottom: 0.35rem;
-  font-size: 1.35rem;
-  font-weight: 500;
-  color: var(--global-text-color);
-}
-
-.featured-talks-header p {
-  margin: 0;
-  font-size: 0.9rem;
-  font-weight: 400;
-  color: var(--global-text-color-light);
-}
-
-/* Featured talk cards */
 
 .featured-talk {
   padding: 1.15rem;
@@ -246,20 +205,22 @@ nav_order: 4
 }
 
 .featured-talk-year {
+  margin-bottom: 0.35rem;
   font-size: 0.85rem;
   opacity: 0.65;
-  margin-bottom: 0.35rem;
 }
 
 .featured-talk h3 {
-  font-size: 1.05rem;
   margin: 0.2rem 0 0.7rem;
+  font-size: 1.05rem;
+  line-height: 1.4;
 }
 
 .featured-talk p {
-  font-size: 0.9rem;
-  opacity: 0.78;
   margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  opacity: 0.78;
 }
 
 .talk-list {
