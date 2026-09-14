@@ -63,6 +63,27 @@ nav_order: 3
 
     <blockquote class="student-quote">
       <p>
+        “The professor was very knowledgeable on the material and provided a well thought out lesson plan. Slides were very detailed and provided a great supplement to lectures”
+      </p>
+      <cite>— Student evaluation · PPG2017 (2023)</cite>
+    </blockquote>
+
+    <blockquote class="student-quote">
+      <p>
+        “Lecture was great! Prof was welcoming and allowed for discussions throughout lecture”
+      </p>
+      <cite>— Student evaluation · GGRC12 (2024)</cite>
+    </blockquote>
+
+    <blockquote class="student-quote">
+      <p>
+        “Professor Ignacio is very passionate about GIS and programming for GIS, which shows when he is talking to us about the various applications and uses of specific codes”
+      </p>
+      <cite>— Student evaluation · GGR375 (2025)</cite>
+    </blockquote>
+    
+    <blockquote class="student-quote">
+      <p>
         “Professor was one of the best I have had in my university experience. Very interesting, provided good examples, explained things clearly, and all assignments and exams felt fair. He wanted his class to learn and succeed, and it shows!”
       </p>
       <cite>— Student evaluation · GGR270 (2025)</cite>
@@ -70,18 +91,16 @@ nav_order: 3
 
     <blockquote class="student-quote">
       <p>
-        “Insert a student evaluation comment highlighting support,
-        approachability, or encouragement.”
+        “He also helped me to think through my thesis and suggested different ways to look at the research. He took time to go through my work and commented to improve it. Overall the style and nature of instruction was nurturing as well as pushing to think critically”
       </p>
-      <cite>— Student evaluation, GGR375</cite>
+      <cite>— Student evaluation · JPG2150 (2026)</cite>
     </blockquote>
 
     <blockquote class="student-quote">
       <p>
-        “Insert a student evaluation comment highlighting the relevance
-        of the course material or the development of practical skills.”
+        “Professor Tiznado-Aitken's course was excellent, incredibly informative, engaging, and delivered very well. Professor Tiznado-Aitken is very knowledgeable, and I appreciate how supportive he is in answering questions and imparting information”
       </p>
-      <cite>— Student evaluation, PLA1105</cite>
+      <cite>— Student evaluation · JPG1554 (2026)</cite>
     </blockquote>
 
   </div>
