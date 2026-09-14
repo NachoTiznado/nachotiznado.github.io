@@ -367,14 +367,17 @@ nav_order: 3
 }
 
 .teaching-level-card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto auto auto 1fr auto;
   min-width: 0;
   height: 100%;
   padding: 1.5rem;
   border: 1px solid var(--global-divider-color);
   border-radius: 12px;
 }
+
+
+/* Card colours */
 
 .teaching-level-card:nth-child(1) {
   background: color-mix(
@@ -392,6 +395,9 @@ nav_order: 3
   );
 }
 
+
+/* Card heading */
+
 .teaching-level-number {
   margin-bottom: 1rem;
   font-size: 0.85rem;
@@ -405,12 +411,36 @@ nav_order: 3
   color: var(--global-text-color);
 }
 
+
+/* Short description */
+
 .teaching-level-description {
-  min-height: 4.8rem;
-  margin-bottom: 2rem;
+  min-height: 0;
+  margin-bottom: 1.25rem;
   font-size: 0.95rem;
   line-height: 1.6;
   color: var(--global-text-color-light);
+}
+
+
+/* Institutions and course lists */
+
+.teaching-institution {
+  margin: 1.25rem 0 0;
+}
+
+.teaching-institution:first-of-type {
+  min-height: 0;
+}
+
+.teaching-institution h4 {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--global-divider-color);
+  font-size: 0.98rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--global-text-color);
 }
 
 
