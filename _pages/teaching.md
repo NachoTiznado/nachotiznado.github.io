@@ -368,7 +368,13 @@ nav_order: 3
 
 .teaching-level-card {
   display: grid;
-  grid-template-rows: auto auto auto 1fr auto;
+  grid-template-rows:
+    auto
+    auto
+    5.5rem
+    minmax(0, 1fr)
+    auto;
+
   min-width: 0;
   height: 100%;
   padding: 1.5rem;
@@ -377,7 +383,9 @@ nav_order: 3
 }
 
 
-/* Card colours */
+/* --------------------------------
+   Card colours
+-------------------------------- */
 
 .teaching-level-card:nth-child(1) {
   background: color-mix(
@@ -396,7 +404,9 @@ nav_order: 3
 }
 
 
-/* Card heading */
+/* --------------------------------
+   Card heading
+-------------------------------- */
 
 .teaching-level-number {
   margin-bottom: 1rem;
@@ -412,25 +422,24 @@ nav_order: 3
 }
 
 
-/* Short description */
+/* --------------------------------
+   Short description
+-------------------------------- */
 
 .teaching-level-description {
-  min-height: 0;
-  margin-bottom: 1.25rem;
+  margin: 0 0 1.25rem;
   font-size: 0.95rem;
   line-height: 1.6;
   color: var(--global-text-color-light);
 }
 
 
-/* Institutions and course lists */
+/* --------------------------------
+   Institutions
+-------------------------------- */
 
 .teaching-institution {
   margin: 1.25rem 0 0;
-}
-
-.teaching-institution:first-of-type {
-  min-height: 0;
 }
 
 .teaching-institution h4 {
@@ -445,22 +454,8 @@ nav_order: 3
 
 
 /* --------------------------------
-   Institutions and course lists
+   Course lists
 -------------------------------- */
-
-.teaching-institution {
-  margin: 2rem 0 0;
-}
-
-.teaching-institution h4 {
-  margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid var(--global-divider-color);
-  font-size: 0.98rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: var(--global-text-color);
-}
 
 .teaching-course-list {
   margin: 0;
@@ -505,26 +500,6 @@ nav_order: 3
 
 
 /* --------------------------------
-   Responsive layout
--------------------------------- */
-
-@media (max-width: 900px) {
-
-  .teaching-levels {
-    grid-template-columns: 1fr;
-  }
-
-  .student-quotes {
-    grid-template-columns: 1fr;
-  }
-
-  .teaching-reflection p {
-    font-size: 0.95rem;
-  }
-
-}
-
-/* --------------------------------
    Teaching images
 -------------------------------- */
 
@@ -543,7 +518,33 @@ nav_order: 3
   border-radius: 12px;
 }
 
+
+/* --------------------------------
+   Responsive layout
+-------------------------------- */
+
+@media (max-width: 900px) {
+
+  .teaching-levels {
+    grid-template-columns: 1fr;
+  }
+
+  .teaching-level-card {
+    grid-template-rows: none;
+  }
+
+  .student-quotes {
+    grid-template-columns: 1fr;
+  }
+
+  .teaching-reflection p {
+    font-size: 0.95rem;
+  }
+
+}
+
 @media (max-width: 768px) {
+
   .teaching-images {
     grid-template-columns: 1fr;
   }
@@ -551,6 +552,7 @@ nav_order: 3
   .teaching-images img {
     height: auto;
   }
+
 }
 
 </style>
