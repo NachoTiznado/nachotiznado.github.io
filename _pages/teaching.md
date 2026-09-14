@@ -444,7 +444,7 @@ nav_order: 3
 */
 
 .teaching-institution:first-of-type {
-  min-height: 36rem;
+  min-height: 38rem;
 }
 
 .teaching-institution h4 {
