@@ -10,12 +10,12 @@ nav_order: 3
 <div class="teaching-images">
   <img
     src="{{ '/assets/img/presentation-3.jpeg' | relative_url }}"
-    alt="Teaching presentation in a classroom."
+    alt="Guest lecture in a classroom."
   >
 
   <img
     src="{{ '/assets/img/presentation-8.jpeg' | relative_url }}"
-    alt="Teaching and interacting with students."
+    alt="Students in a final exam."
   >
 </div>
 
@@ -63,10 +63,9 @@ nav_order: 3
 
     <blockquote class="student-quote">
       <p>
-        “Insert a student evaluation comment highlighting clarity,
-        organization, or effective explanations.”
+        “Professor was one of the best I have had in my university experience. Very interesting, provided good examples, explained things clearly, and all assignments and exams felt fair. He wanted his class to learn and succeed, and it shows!”
       </p>
-      <cite>— Student evaluation, GGR270</cite>
+      <cite>— Student evaluation · GGR270 (2025)</cite>
     </blockquote>
 
     <blockquote class="student-quote">
