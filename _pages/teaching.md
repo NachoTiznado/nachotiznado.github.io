@@ -528,4 +528,40 @@ nav_order: 3
 
 }
 
+/* --------------------------------
+   Teaching images
+-------------------------------- */
+
+.teaching-images {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0 3rem;
+}
+
+.teaching-images img {
+  display: block;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
+/* --------------------------------
+   Responsive layout
+-------------------------------- */
+
+@media (max-width: 768px) {
+
+  .teaching-images {
+    grid-template-columns: 1fr;
+  }
+
+  .teaching-images img {
+    height: auto;
+  }
+
+}
+
 </style>
