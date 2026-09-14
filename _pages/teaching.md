@@ -367,14 +367,8 @@ nav_order: 3
 }
 
 .teaching-level-card {
-  display: grid;
-  grid-template-rows:
-    auto
-    auto
-    5.5rem
-    minmax(0, 1fr)
-    auto;
-
+  display: flex;
+  flex-direction: column;
   min-width: 0;
   height: 100%;
   padding: 1.5rem;
@@ -405,7 +399,7 @@ nav_order: 3
 
 
 /* --------------------------------
-   Card heading
+   Card headings
 -------------------------------- */
 
 .teaching-level-number {
@@ -423,10 +417,11 @@ nav_order: 3
 
 
 /* --------------------------------
-   Short description
+   Short descriptions
 -------------------------------- */
 
 .teaching-level-description {
+  min-height: 5.5rem;
   margin: 0 0 1.25rem;
   font-size: 0.95rem;
   line-height: 1.6;
@@ -440,6 +435,16 @@ nav_order: 3
 
 .teaching-institution {
   margin: 1.25rem 0 0;
+}
+
+/*
+  The first institution section is given a shared minimum
+  height so that the second institution begins at the same
+  vertical position in both cards.
+*/
+
+.teaching-institution:first-of-type {
+  min-height: 36rem;
 }
 
 .teaching-institution h4 {
@@ -500,26 +505,6 @@ nav_order: 3
 
 
 /* --------------------------------
-   Teaching images
--------------------------------- */
-
-.teaching-images {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-  margin: 2rem 0 3rem;
-}
-
-.teaching-images img {
-  display: block;
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-  border-radius: 12px;
-}
-
-
-/* --------------------------------
    Responsive layout
 -------------------------------- */
 
@@ -529,8 +514,8 @@ nav_order: 3
     grid-template-columns: 1fr;
   }
 
-  .teaching-level-card {
-    grid-template-rows: none;
+  .teaching-institution:first-of-type {
+    min-height: 0;
   }
 
   .student-quotes {
@@ -539,18 +524,6 @@ nav_order: 3
 
   .teaching-reflection p {
     font-size: 0.95rem;
-  }
-
-}
-
-@media (max-width: 768px) {
-
-  .teaching-images {
-    grid-template-columns: 1fr;
-  }
-
-  .teaching-images img {
-    height: auto;
   }
 
 }
