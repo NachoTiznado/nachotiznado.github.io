@@ -7,6 +7,18 @@ nav: true
 nav_order: 3
 ---
 
+<div class="teaching-images">
+  <img
+    src="{{ '/assets/img/presentation-3.jpeg' | relative_url }}"
+    alt="Teaching presentation in a classroom."
+  >
+
+  <img
+    src="{{ '/assets/img/presentation-8.jpeg' | relative_url }}"
+    alt="Teaching and interacting with students."
+  >
+</div>
+
 <div class="teaching-page">
 
   <!-- Teaching reflection -->
@@ -114,24 +126,28 @@ nav_order: 3
           <li>
             <strong>Introduction to Programming in GIS</strong>
             <span>GGR375</span>
+            <span>Department of Geography and Planning</span>
             <em>Fall 2024, Fall 2025, Winter 2027</em>
           </li>
 
           <li>
             <strong>Transportation Geography and Planning</strong>
             <span>GGR424</span>
+            <span>Department of Geography and Planning</span>
             <em>Fall 2026</em>
           </li>
 
           <li>
             <strong>Transportation Geography</strong>
             <span>GGRC12</span>
+            <span>Department of Human Geography</span>
             <em>Winter 2024</em>
           </li>
 
           <li>
             <strong>Seminar in Selected Topics in Human Geography</strong>
             <span>GGRD12 · Suburban Mobilities</span>
+            <span>Department of Human Geography</span>
             <em>Summer 2022</em>
           </li>
 
@@ -146,6 +162,7 @@ nav_order: 3
           <li>
             <strong>Transportation Engineering Workshop</strong>
             <span>ICT2154</span>
+            <span>Department of Transportation Engineering and Logistics</span>
             <em>Fall 2020, Fall 2021</em>
           </li>
 
@@ -174,7 +191,8 @@ nav_order: 3
           <li>
             <strong>Transportation and Urban Form</strong>
             <span>JPG1554</span>
-            <em>Winter 2022, Winter 2026</em>
+            <span>Department of Geography and Planning</span>
+            <em>Winter 2022, Winter 2026, Winter 2027</em>
           </li>
 
           <li>
@@ -183,18 +201,21 @@ nav_order: 3
               JPG2150 · The Geography of Food Delivery: Gig Work, Mobility and
               Urban Space
             </span>
+            <span>Department of Geography and Planning</span>
             <em>Winter 2026</em>
           </li>
 
           <li>
             <strong>Planning Methods II</strong>
             <span>PLA1105</span>
+            <span>Department of Geography and Planning</span>
             <em>Winter 2025</em>
           </li>
 
           <li>
             <strong>Urban Land Use and Transport Policies</strong>
             <span>PPH2017</span>
+            <span>Munk School of Global Affairs & Public Policy</span>
             <em>Fall 2023</em>
           </li>
 
@@ -209,6 +230,7 @@ nav_order: 3
           <li>
             <strong>Transport and Social Justice</strong>
             <span>ICT3800</span>
+            <span>Department of Transportation Engineering and Logistics</span>
             <em>Spring 2021</em>
           </li>
 
@@ -448,6 +470,35 @@ nav_order: 3
     font-size: 0.95rem;
   }
 
+}
+
+/* --------------------------------
+   Teaching images
+-------------------------------- */
+
+.teaching-images {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0 3rem;
+}
+
+.teaching-images img {
+  display: block;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .teaching-images {
+    grid-template-columns: 1fr;
+  }
+
+  .teaching-images img {
+    height: auto;
+  }
 }
 
 </style>
