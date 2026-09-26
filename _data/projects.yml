@@ -1,4 +1,4 @@
-- title: Canada-Israel Hub for Transport Disadvantage: Building a Comparative Research Agenda on Inclusive Accessibility
+- title: "Canada-Israel Hub for Transport Disadvantage: Building a Comparative Research Agenda on Inclusive Accessibility"
   year: 2026
   role: co-applicant
   themes:
@@ -6,14 +6,14 @@
     - Accessibility
   featured: false
 
-- title: Computation & Data Science Education Faculty Fellowship
+- title: "Computation & Data Science Education Faculty Fellowship"
   year: 2026
   role: pi
   themes:
     - Data & computational methods
   featured: false
 
-- title: Mobility Network Research Consortium
+- title: "Mobility Network Research Consortium"
   year: 2026
   role: co-applicant
   themes:
@@ -21,7 +21,7 @@
     - Urban mobility
   featured: false
 
-- title: OVPI Joint Workshop 2026-2027: Exploring gender accessibility and equity aspects of human mobility in Ghent and Toronto
+- title: "OVPI Joint Workshop 2026-2027: Exploring gender accessibility and equity aspects of human mobility in Ghent and Toronto"
   year: 2026
   role: pi
   themes:
@@ -29,7 +29,7 @@
     - Accessibility
   featured: false
 
-- title: Decarbonizing urban mobility: The role of governance and regulatory frameworks in micromobility–transit integration in Canadian cities
+- title: "Decarbonizing urban mobility: The role of governance and regulatory frameworks in micromobility–transit integration in Canadian cities"
   year: 2026
   role: pi
   themes:
@@ -37,7 +37,7 @@
     - Cycling
   featured: true
 
-- title: Fast deliveries, frictional spaces: Practices, experiences and public perceptions of food delivery e-cyclists in Toronto
+- title: "Fast deliveries, frictional spaces: Practices, experiences and public perceptions of food delivery e-cyclists in Toronto"
   year: 2026
   role: pi
   themes:
@@ -46,7 +46,7 @@
     - Transport equity
   featured: true
 
-- title: University of Toronto - Ghent University Partnership
+- title: "University of Toronto - Ghent University Partnership"
   year: 2026
   role: co-applicant
   themes:
@@ -54,14 +54,14 @@
     - Urban mobility
   featured: false
 
-- title: Working through heat: Urban infrastructure, thermal exposure, and mobility conditions of food delivery workers
+- title: "Working through heat: Urban infrastructure, thermal exposure, and mobility conditions of food delivery workers"
   year: 2026
   role: other
   themes:
     - Food delivery
   featured: false
 
-- title: Modelling micro-scale thermal exposure in sustainable transport networks: A machine learning approach using street view imagery
+- title: "Modelling micro-scale thermal exposure in sustainable transport networks: A machine learning approach using street view imagery"
   year: 2026
   role: other
   themes:
@@ -69,7 +69,7 @@
     - Sustainable mobility
   featured: false
 
-- title: Making transport poverty visible: Equity and climate justice in Ahmedabad’s low-income settlements
+- title: "Making transport poverty visible: Equity and climate justice in Ahmedabad’s low-income settlements"
   year: 2026
   role: pi
   themes:
@@ -77,7 +77,7 @@
     - Accessibility
   featured: true
 
-- title: How do we keep the wheels turning? A qualitative study exploring the reasons and circumstances that lead people to stop or reduce cycling travel
+- title: "How do we keep the wheels turning? A qualitative study exploring the reasons and circumstances that lead people to stop or reduce cycling travel"
   year: 2025
   role: pi
   themes:
@@ -85,7 +85,7 @@
     - Transport equity
   featured: true
 
-- title: Measuring transport poverty: A comparative lens between Chile and Canada
+- title: "Measuring transport poverty: A comparative lens between Chile and Canada"
   year: 2025
   role: pi
   themes:
@@ -93,7 +93,7 @@
     - Accessibility
   featured: true
 
-- title: Cycling Economies: Mapping Livelihoods and Economic Worlds Around the Bicycle in Bogotá
+- title: "Cycling Economies: Mapping Livelihoods and Economic Worlds Around the Bicycle in Bogotá"
   year: 2025
   role: collaborator
   themes:
@@ -101,7 +101,7 @@
     - Urban mobility
   featured: false
 
-- title: Pedaling towards equity: A longitudinal, mixed methods study on cycling behaviour and barriers in Toronto
+- title: "Pedaling towards equity: A longitudinal, mixed methods study on cycling behaviour and barriers in Toronto"
   year: 2025
   role: pi
   themes:
@@ -109,15 +109,15 @@
     - Transport equity
   featured: true
 
-- title: Transit experiences of autistic young adults in Toronto
+- title: "Transit experiences of autistic young adults in Toronto"
   year: 2024
-  role: pi
+  role: co-pi
   themes:
     - Transport equity
     - Accessibility
   featured: false
 
-- title: Vai Longe – Tembici’s project acceleration program
+- title: "Vai Longe – Tembici’s project acceleration program"
   year: 2023
   role: co-lead
   themes:
@@ -125,7 +125,7 @@
     - Sustainable mobility
   featured: false
 
-- title: Cycling surveys for the City of Toronto
+- title: "Cycling surveys for the City of Toronto"
   year: 2023
   role: co-lead
   themes:
@@ -133,7 +133,7 @@
     - Sustainable mobility
   featured: false
 
-- title: Neighbourhood completeness: Health, well-being and social capital
+- title: "Neighbourhood completeness: Health, well-being and social capital"
   year: 2022
   role: co-lead
   themes:
@@ -141,15 +141,15 @@
     - Accessibility
   featured: false
 
-- title: Evaluating urban transport equity using big and small data
+- title: "Evaluating urban transport equity using big and small data"
   year: 2022
-  role: other
+  role: collaborator
   themes:
     - Transport equity
     - Data & computational methods
   featured: false
 
-- title: Mobilizing justice: towards evidence-based transportation equity policy
+- title: "Mobilizing justice: towards evidence-based transportation equity policy"
   year: 2021
   role: co-applicant
   themes:
@@ -157,15 +157,15 @@
     - Accessibility
   featured: true
 
-- title: Equity-scoring tool developed for the City of Toronto
+- title: "Equity-scoring tool developed for the City of Toronto"
   year: 2021
-  role: other
+  role: collaborator
   themes:
     - Transport equity
     - Data & computational methods
   featured: false
 
-- title: Regulation of delivery apps market
+- title: "Regulation of delivery apps market"
   year: 2021
   role: co-lead
   themes:
@@ -173,7 +173,7 @@
     - Urban mobility
   featured: false
 
-- title: Transport equity: Addressing accessibility in urban margins
+- title: "Transport equity: Addressing accessibility in urban margins"
   year: 2019
   role: co-lead
   themes:
@@ -181,7 +181,7 @@
     - Accessibility
   featured: true
 
-- title: CoAXs: Collaborative accessibility-based stakeholder engagement for public transportation planning
+- title: "CoAXs: Collaborative accessibility-based stakeholder engagement for public transportation planning"
   year: 2017
   role: co-lead
   themes:
@@ -189,7 +189,7 @@
     - Sustainable mobility
   featured: false
 
-- title: Participatory Design for Sustainable Public Transportation Planning: Applications in Different Socio-Cultural Contexts
+- title: "Participatory Design for Sustainable Public Transportation Planning: Applications in Different Socio-Cultural Contexts"
   year: 2017
   role: other
   themes:
