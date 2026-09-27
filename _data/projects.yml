@@ -1,135 +1,325 @@
-- title: 'Canada-Israel Hub for Transport Disadvantage: Building a Comparative Research Agenda on Inclusive Accessibility'
+- title: 'Canada-Israel Hub for Transport Disadvantage: Building a Comparative Research
+    Agenda on Inclusive Accessibility'
   year: 2026
   role: co-applicant
   theme: Accessibility and transport equity
-  featured: false
-- title: Computation & Data Science Education Faculty Fellowship
-  year: 2026
-  role: pi
-  theme: Teaching
+  funder: Canada-Israel Academia network, a project of Bar-Ilan University and the
+    Network of Engaged Canadian Academics
+  duration: 9 months
+  awarded: September 2026
+  team:
+  - Ignacio Tiznado-Aitken — Co-Applicant
   featured: false
 - title: Mobility Network Research Consortium
   year: 2026
   role: co-applicant
   theme: Sustainable mobility & cycling
+  funder: Natural Sciences and Engineering Research Council (NSERC) Alliance
+  duration: 5 years
+  awarded: September 2026
+  team:
+  - Steven Farber (University of Toronto) — Team Lead
+  - Ignacio Tiznado-Aitken — Co-Applicant
   featured: false
-- title: 'OVPI Joint Workshop 2026-2027: Exploring gender accessibility and equity aspects of human mobility in Ghent and
-    Toronto'
+- title: 'OVPI Joint Workshop 2026-2027: Exploring gender accessibility and equity
+    aspects of human mobility in Ghent and Toronto'
   year: 2026
   role: co-pi
   theme: Accessibility and transport equity
+  funder: Office of the Vice-President, International (OVPI), University of Toronto
+  duration: 1 year
+  awarded: July 2026
+  team:
+  - Ignacio Tiznado-Aitken — Co-Principal Investigator
+  - Lindsey Smith (University of Toronto) — Co-Principal Investigator
   featured: false
-- title: 'Decarbonizing urban mobility: The role of governance and regulatory frameworks in micromobility–transit integration
-    in Canadian cities'
+- title: 'Decarbonizing urban mobility: The role of governance and regulatory frameworks
+    in micromobility–transit integration in Canadian cities'
   year: 2026
   role: pi
   theme: Sustainable mobility & cycling
+  funder: Lawson Climate Institute, University of Toronto
+  duration: 2 years
+  awarded: June 2026
+  team:
+  - Ignacio Tiznado-Aitken — Principal Investigator
+  - Charissa Iogna (City of Toronto) — Team member
+  - Sophie Callahan (Climate Action Partnership) — Team member
   featured: true
-- title: 'Fast deliveries, frictional spaces: Practices, experiences and public perceptions of food delivery e-cyclists in
-    Toronto'
+  image: /assets/img/project-decarbonizing-mobility.jpg
+- title: 'Fast deliveries, frictional spaces: Practices, experiences and public perceptions
+    of food delivery e-cyclists in Toronto'
   year: 2026
   role: pi
   theme: Food delivery
+  funder: Insight Development Grant (IDG), Social Sciences and Humanities Research
+    Council of Canada
+  duration: 2 years
+  awarded: June 2026
+  team:
+  - Ignacio Tiznado-Aitken — Principal Investigator
+  - Mischa Young (Institut national de la recherche scientifique) — Co-Applicant
+  - Emilia Bruck (Vienna University of Technology) — Collaborator
   featured: true
-- title: 'University of Toronto - Ghent University Partnership: Exploring gender accessibility and equity aspects of human
-    mobility in Ghent and Toronto'
+  image: /assets/img/project-food-delivery.jpg
+- title: University of Toronto - Ghent University Partnership
   year: 2026
   role: co-applicant
   theme: Accessibility and transport equity
+  funder: University of Toronto India Foundation (UTIF)
+  duration: 11 months
+  awarded: February 2026
+  team:
+  - Ignacio Tiznado-Aitken — Co-Applicant
+  - Lindsey Smith (University of Toronto) — Team member
+  - Steven Farber (University of Toronto) — Collaborator
+  - Ivana Semanjski (Ghent University) — Team member
+  - Koos Fransen (Ghent University) — Team member
   featured: false
-- title: 'Working through heat: Urban infrastructure, thermal exposure, and mobility conditions of food delivery workers'
+- title: 'Working through heat: Urban infrastructure, thermal exposure, and mobility
+    conditions of food delivery workers'
   year: 2026
   role: pi
   theme: Food delivery
+  funder: University of Toronto Excellence Award (UTEA)
+  duration: 4 months
+  awarded: April 2026
+  team:
+  - Ignacio Tiznado-Aitken — Principal Investigator
+  - Rina Salsberg (University of Toronto) — Undergraduate student
   featured: false
-- title: 'Modelling micro-scale thermal exposure in sustainable transport networks: A machine learning approach using street
-    view imagery'
+- title: 'Modelling micro-scale thermal exposure in sustainable transport networks:
+    A machine learning approach using street view imagery'
   year: 2026
   role: pi
   theme: Sustainable mobility & cycling
+  funder: University of Toronto Excellence Award (UTEA)
+  duration: 5 months
+  awarded: April 2026
+  team:
+  - Ignacio Tiznado-Aitken — Principal Investigator
+  - Sandesh Bhandari (University of Toronto) — Undergraduate student
   featured: false
-- title: 'Making transport poverty visible: Equity and climate justice in Ahmedabad’s low-income settlements'
+- title: 'Making transport poverty visible: Equity and climate justice in Ahmedabad’s
+    low-income settlements'
   year: 2026
   role: pi
   theme: Accessibility and transport equity
+  funder: University of Toronto India Foundation (UTIF)
+  duration: 12 months
+  awarded: April 2026
+  team:
+  - Ignacio Tiznado-Aitken — Principal Investigator
+  - Shelly Kulshrestha (The Urban Lab, India) — Team member
+  - Kinjal Pillai (The Urban Lab, India) — Team member
+  - Sandeep Paul (The Urban Lab, India) — Team member
   featured: true
-- title: How do we keep the wheels turning? A qualitative study exploring the reasons and circumstances that lead people to
-    stop or reduce cycling travel
+  image: /assets/img/project-transport-poverty.jpg
+- title: How do we keep the wheels turning? A qualitative study exploring the reasons
+    and circumstances that lead people to stop or reduce cycling travel
   year: 2025
   role: pi
   theme: Sustainable mobility & cycling
+  funder: SSHRC Institutional Grants (SIG)
+  duration: 6 months
+  awarded: September 2025
+  team:
+  - Ignacio Tiznado-Aitken — Principal Investigator
+  - Sophie Callahan (The Centre of Active Transportation) — Team member
   featured: false
 - title: 'Measuring transport poverty: A comparative lens between Chile and Canada'
   year: 2025
   role: pi
   theme: Accessibility and transport equity
+  funder: Lee Schipper Memorial Scholarship, World Resources Institute (WRI) and Volvo
+    Research and Educational Foundations (VREF)
+  duration: 9 months
+  awarded: July 2025
+  team:
+  - Ignacio Tiznado-Aitken — Principal Investigator
+  - Ricardo Hurtubia (PUC) — Researcher
+  - Giovanni Vecchio (PUC) — Researcher
+  - Juan Antonio Carrasco (UdeC) — Researcher
   featured: true
-- title: 'Cycling Economies: Mapping Livelihoods and Economic Worlds Around the Bicycle in Bogotá'
+  image: /assets/img/project-measuring-transport-poverty.jpg
+- title: 'Cycling Economies: Mapping Livelihoods and Economic Worlds Around the Bicycle
+    in Bogotá'
   year: 2025
   role: collaborator
   theme: Sustainable mobility & cycling
+  funder: SDGs@UofT Synthesis Grants
+  duration: 1 year
+  awarded: April 2025
+  team:
+  - Sergio Montero (UTSG) — Team Lead
+  - Fernando Calderón Figueroa (UTSC) — Co-Lead
+  - Paola Castañeda (Universidad de los Andes) — Co-Lead
+  - Ignacio Tiznado-Aitken — Collaborator
   featured: false
-- title: 'Pedaling towards equity: A longitudinal, mixed methods study on cycling behaviour and barriers in Toronto'
+- title: 'Pedaling towards equity: A longitudinal, mixed methods study on cycling
+    behaviour and barriers in Toronto'
   year: 2025
   role: pi
   theme: Sustainable mobility & cycling
+  funder: Partnership Engage Grants, Social Sciences and Humanities Research Council
+    of Canada
+  duration: 1 year
+  awarded: April 2025
+  team:
+  - Ignacio Tiznado-Aitken — Principal Investigator
+  - Sophie Callahan (The Centre of Active Transportation) — Team member
   featured: true
+  image: /assets/img/project-pedaling-equity.jpg
 - title: Transit experiences of autistic young adults in Toronto
   year: 2024
   role: co-pi
   theme: Accessibility and transport equity
+  funder: Mobilizing Justice Partnership
+  duration: 2 years
+  awarded: January 2024
+  team:
+  - Ignacio Tiznado-Aitken — Co-Principal Investigator
+  - Michelle Wyndham-West (OCAD University) — Co-Principal Investigator
+  - Liam Bienstock (OCAD University) — Master’s student
   featured: false
 - title: Vai Longe – Tembici’s project acceleration program
   year: 2023
   role: co-pi
   theme: Food delivery
+  funder: Tembici and its project acceleration program
+  duration: 2 years
+  awarded: June 2023
+  team:
+  - Ignacio Tiznado-Aitken — Co-Principal Investigator
+  - Mateus Humberto (University of São Paulo) — Team member
+  - Giovanni Vecchio (Pontificia Universidad Católica de Chile) — Team member
   featured: false
 - title: Cycling surveys for the City of Toronto
   year: 2023
   role: co-pi
   theme: Sustainable mobility & cycling
+  funder: City of Toronto
+  duration: 2023 and 2025 project cycles
+  awarded: March 2023 and March 2025
+  team:
+  - Ignacio Tiznado-Aitken — Co-Principal Investigator (2023); Principal Investigator
+    (2025)
+  - Steven Farber (University of Toronto) — Team member (2023 and 2025)
+  - Siobhan Teel (University of Toronto) — Team member (2023)
+  - Zehui Yin (University of Toronto) — Team member (2023)
+  - David Simor (The Centre for Active Transportation) — Team member (2023)
+  - Jennie Geleff (The Centre for Active Transportation) — Team member (2023)
+  - Sophie Callahan (The Centre for Active Transportation) — Team member (2025)
+  - Keira Engelen (The Centre for Active Transportation) — Team member (2025)
   featured: false
 - title: 'Neighbourhood completeness: Health, well-being and social capital'
   year: 2022
   role: co-pi
   theme: Accessibility and transport equity
+  funder: Canada Mortgage and Housing Corporation (CMHC) and the Suburban Mobilities
+    Cluster
+  duration: 1 year
+  awarded: October 2022
+  team:
+  - Ignacio Tiznado-Aitken — Co-Principal Investigator
+  - Steven Farber (University of Toronto) — Co-Principal Investigator
+  - Christopher Higgins (University of Toronto) — Co-Principal Investigator
   featured: false
 - title: Evaluating urban transport equity using big and small data
   year: 2022
   role: co-applicant
   theme: Accessibility and transport equity
+  funder: Strategic Partnership Award for Research Collaboration (SPARC), The Chinese
+    University of Hong Kong
+  duration: 1 year
+  awarded: February 2022
+  team:
+  - Steven Farber (University of Toronto) — Team Lead
+  - Eric Miller (University of Toronto) — Team Lead
+  - Ignacio Tiznado-Aitken — Co-Applicant
+  - Dick Ettema (Utrecht University) — Team member
+  - Dea van Lierop (Utrecht University) — Team member
+  - Sui Tao (Beijing University) — Team member
+  - Sylvia He (The Chinese University of Hong Kong) — Team member
   featured: false
 - title: 'Mobilizing justice: towards evidence-based transportation equity policy'
   year: 2021
   role: co-applicant
   theme: Accessibility and transport equity
+  funder: Partnership Grants, Social Sciences and Humanities Research Council of Canada
+  duration: 5 years
+  awarded: June 2021
+  team:
+  - Steven Farber (University of Toronto) — Partnership Lead
+  - Ignacio Tiznado-Aitken — Co-Applicant and Associate Director
   featured: true
+  image: /assets/img/project-mobilizing-justice.jpg
 - title: Equity-scoring tool developed for the City of Toronto
   year: 2021
   role: collaborator
   theme: Accessibility and transport equity
+  funder: City of Toronto, Transportation Services Division
+  duration: 18 months
+  awarded: May 2021
+  team:
+  - Steven Farber (University of Toronto) — Team Lead
+  - Kamille LeClair — Team Lead
+  - Willem Klumpenhouwer — Team Lead
+  - Ignacio Tiznado-Aitken — Collaborator
   featured: false
 - title: Regulation of delivery apps market
   year: 2021
   role: co-pi
   theme: Food delivery
+  funder: Centre of Public Policy, Pontificia Universidad Católica de Chile
+  duration: null
+  awarded: March 2021
+  team:
+  - Ignacio Tiznado-Aitken — Co-Principal Investigator
+  - Ricardo Hurtubia — Co-Principal Investigator
+  - Juan Carlos Muñoz — Co-Principal Investigator
+  - Martín Tironi — Co-Principal Investigator
+  - Miguel Yaksic — Co-Principal Investigator
   featured: false
 - title: 'Transport equity: Addressing accessibility in urban margins'
   year: 2019
   role: co-pi
   theme: Accessibility and transport equity
+  funder: Center for Sustainable Development Goals in Latin America (CODS)
+  duration: 2 years
+  awarded: November 2019
+  team:
+  - Ignacio Tiznado-Aitken — Co-Principal Investigator
+  - Giovanni Vecchio — Co-Principal Investigator
+  - Juan Carlos Muñoz — Researcher
+  - Eduardo Vasconcellos — Researcher
+  - Julián Arellana — Researcher
+  - Thiago Guimaraes — Researcher
+  - Luis Ángel Guzmán — Researcher
   featured: false
-- title: 'CoAXs: Collaborative accessibility-based stakeholder engagement for public transportation planning'
+- title: 'CoAXs: Collaborative accessibility-based stakeholder engagement for public
+    transportation planning — Santiago, Chile'
   year: 2017
   role: co-pi
   theme: Accessibility and transport equity
+  funder: MISTI MIT-CHILE-PUC Graduate Student Seed Fund program
+  duration: 2 years
+  awarded: January 2017
+  team:
+  - Ignacio Tiznado-Aitken — Co-Principal Investigator
+  - Jaime Soza-Parra (PUC) — Co-Principal Investigator
+  - Christian Navas (MIT) — Co-Principal Investigator
+  - Ricardo Sánchez (MIT) — Co-Principal Investigator
   featured: false
-- title: 'Participatory Design for Sustainable Public Transportation Planning: Applications in Different Socio-Cultural Contexts'
+- title: 'Participatory Design for Sustainable Public Transportation Planning: Applications
+    in Different Socio-Cultural Contexts'
   year: 2017
   role: collaborator
   theme: Sustainable mobility & cycling
-  featured: false
-- title: Pedagogical Innovation and Experimentation (PIE) Fund
-  role: other
-  theme: Teaching
+  funder: MISTI Global Seed Funds program
+  duration: 2 years
+  awarded: January 2017
+  team:
+  - Ignacio Tiznado-Aitken — Collaborator; International PhD student; participated
+    in CoAXs workshops in Concepción, Chile and joint analysis of main results
   featured: false
