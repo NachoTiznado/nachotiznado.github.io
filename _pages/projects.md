@@ -1,3 +1,4 @@
+
 ---
 layout: page
 permalink: /projects/
@@ -32,7 +33,16 @@ nav_order: 5
     {% for project in projects %}
       {% if project.featured %}
         <article class="featured-project">
-          <div class="featured-project-image"><img src="{{ project.image | relative_url }}" alt="{{ project.title }}"></div>
+          <div class="featured-project-image">
+            <img src="{{ project.image | relative_url }}" alt="{{ project.title }}">
+          </div>
+
+          {% if project.image_credit and project.image_credit_url %}
+            <p class="image-credit">
+              Photo by <a href="{{ project.image_credit_url }}" target="_blank" rel="noopener noreferrer">{{ project.image_credit }}</a>
+            </p>
+          {% endif %}
+
           <div class="featured-project-content">
             <div class="featured-project-year">{{ project.year }}</div>
             <h3>{{ project.title }}</h3>
@@ -52,13 +62,28 @@ nav_order: 5
     {% assign themes = "Accessibility and transport equity|Sustainable mobility & cycling|Food delivery" | split: "|" %}
     {% assign theme_images = "/assets/img/theme-accessibility.jpg|/assets/img/theme-cycling.jpg|/assets/img/theme-food-delivery.jpg" | split: "|" %}
 
+    {% assign theme_credits = "Felix Macleod|Jordy Munoz|Jonathan Gong" | split: "|" %}
+    {% assign theme_credit_urls = "https://unsplash.com/photos/a-man-riding-a-bike-down-a-street-next-to-tall-buildings-LabnR96dlu8|https://unsplash.com/photos/a-person-walking-with-a-stroller-1zdfKW9naTQ|https://unsplash.com/photos/a-man-riding-a-bike-across-a-street-3rxoGZBfDxg" | split: "|" %}
+
     {% for theme in themes %}
       {% assign theme_index = forloop.index0 %}
       {% assign theme_projects = projects | where: "theme", theme %}
+      {% assign theme_credit = theme_credits[theme_index] %}
+      {% assign theme_credit_url = theme_credit_urls[theme_index] %}
+
       <section class="project-theme">
-        <div class="project-theme-image">
-          <img src="{{ theme_images[theme_index] | relative_url }}" alt="{{ theme }}">
+        <div class="project-theme-visual">
+          <div class="project-theme-image">
+            <img src="{{ theme_images[theme_index] | relative_url }}" alt="{{ theme }}">
+          </div>
+
+          {% if theme_credit and theme_credit_url %}
+            <p class="image-credit">
+              Photo by <a href="{{ theme_credit_url }}" target="_blank" rel="noopener noreferrer">{{ theme_credit }}</a>
+            </p>
+          {% endif %}
         </div>
+
         <div class="project-theme-main">
           <div class="project-theme-intro">
             <h3>{{ theme }}</h3>
@@ -105,6 +130,12 @@ nav_order: 5
 .featured-project{overflow:hidden;border:1px solid var(--global-divider-color);border-radius:12px;background:var(--global-bg-color)}
 .featured-project-image{height:180px;overflow:hidden}
 .featured-project-image img{width:100%;height:100%;display:block;object-fit:cover}
+
+/* Subtle photo credits */
+.image-credit{margin:.25rem 1.15rem 0;font-size:.65rem;line-height:1.3;font-weight:400;color:var(--global-text-color-light);opacity:.8}
+.image-credit a{color:inherit;text-decoration:none}
+.image-credit a:hover{text-decoration:underline}
+
 .featured-project-content{padding:1.15rem}
 .featured-project-year{margin-bottom:.35rem;font-size:.85rem;color:var(--global-text-color-light)}
 .featured-project h3{margin:0;font-size:1.05rem;font-weight:500;line-height:1.4}
@@ -113,8 +144,10 @@ nav_order: 5
 .project-themes{margin-bottom:4rem}
 .project-theme{display:grid;grid-template-columns:minmax(220px,30%) 1fr;column-gap:2rem;padding:2rem 0;border-top:1px solid var(--global-divider-color)}
 .project-theme:last-child{border-bottom:1px solid var(--global-divider-color)}
+.project-theme-visual{min-width:0}
 .project-theme-image{height:360px;overflow:hidden;border-radius:12px}
 .project-theme-image img{width:100%;height:100%;display:block;object-fit:cover}
+.project-theme-visual .image-credit{margin:.35rem 0 0}
 .project-theme-main{min-width:0}
 .project-theme-intro h3{margin:0 0 1rem;font-size:1.2rem;font-weight:500}
 .project-item{border-top:1px solid var(--global-divider-color)}
@@ -127,6 +160,19 @@ nav_order: 5
 .project-team{margin-top:.65rem}
 .project-team ul{margin:.4rem 0 0 1.25rem}
 .project-team li{margin-bottom:.25rem}
-@media(max-width:900px){.projects-stats{grid-template-columns:repeat(2,1fr)}.projects-stat:nth-child(3){border-left:none;border-top:1px solid var(--global-divider-color)}.projects-stat:nth-child(4){border-top:1px solid var(--global-divider-color)}.featured-projects{grid-template-columns:1fr}.project-theme{grid-template-columns:1fr}.project-theme-image{height:220px;margin-bottom:1.25rem}}
-@media(max-width:600px){.projects-stats{grid-template-columns:1fr}.projects-stat+.projects-stat{border-left:none;border-top:1px solid var(--global-divider-color)}.project-item summary{align-items:flex-start}}
+
+@media(max-width:900px){
+  .projects-stats{grid-template-columns:repeat(2,1fr)}
+  .projects-stat:nth-child(3){border-left:none;border-top:1px solid var(--global-divider-color)}
+  .projects-stat:nth-child(4){border-top:1px solid var(--global-divider-color)}
+  .featured-projects{grid-template-columns:1fr}
+  .project-theme{grid-template-columns:1fr}
+  .project-theme-image{height:220px}
+}
+
+@media(max-width:600px){
+  .projects-stats{grid-template-columns:1fr}
+  .projects-stat+.projects-stat{border-left:none;border-top:1px solid var(--global-divider-color)}
+  .project-item summary{align-items:flex-start}
+}
 </style>
