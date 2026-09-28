@@ -1,28 +1,24 @@
 ---
-
 layout: page
 permalink: /projects/
 title: Projects
 description: Research projects, funded initiatives, and collaborations spanning transport equity, accessibility, sustainable mobility, cycling, and urban mobility.
 nav: true
 nav_order: 5
-------------
+---
 
 <div class="projects-page">
 
-{% assign projects = site.data.projects %}
-{% assign total_projects = projects | size %}
-{% assign pi_projects = projects | where: "role", "pi" %}
-{% assign coppi_projects = projects | where: "role", "co-pi" %}
-{% assign coapp_projects = projects | where: "role", "co-applicant" %}
-{% assign collaborator_projects = projects | where: "role", "collaborator" %}
-{% assign pi_count = pi_projects | size %}
-{% assign coppi_count = coppi_projects | size %}
-{% assign leadership_count = pi_count | plus: coppi_count %}
+  {% assign projects = site.data.projects %}
+  {% assign total_projects = projects | size %}
+  {% assign pi_projects = projects | where: "role", "pi" %}
+  {% assign coppi_projects = projects | where: "role", "co-pi" %}
+  {% assign coapp_projects = projects | where: "role", "co-applicant" %}
+  {% assign collaborator_projects = projects | where: "role", "collaborator" %}
 
   <div class="projects-stats">
     <div class="projects-stat"><div class="projects-stat-value">{{ total_projects }}</div><div class="projects-stat-label">Projects</div></div>
-    <div class="projects-stat"><div class="projects-stat-value">{{ leadership_count }}</div><div class="projects-stat-label">PI · Co-PI</div></div>
+    <div class="projects-stat"><div class="projects-stat-value">{{ pi_projects | size | plus: coppi_projects.size }}</div><div class="projects-stat-label">PI · Co-PI</div></div>
     <div class="projects-stat"><div class="projects-stat-value">{{ coapp_projects | size }}</div><div class="projects-stat-label">Co-Applicant</div></div>
     <div class="projects-stat"><div class="projects-stat-value">{{ collaborator_projects | size }}</div><div class="projects-stat-label">Collaborator</div></div>
   </div>
@@ -36,19 +32,7 @@ nav_order: 5
     {% for project in projects %}
       {% if project.featured %}
         <article class="featured-project">
-          <div class="featured-project-image">
-            <img src="{{ project.image | relative_url }}" alt="{{ project.title }}">
-            {% if project.image_credit %}
-              <span class="image-credit">
-                Photo by
-                {% if project.image_credit_url != nil and project.image_credit_url != "" %}
-                  <a href="{{ project.image_credit_url }}" target="_blank" rel="noopener noreferrer">{{ project.image_credit }}</a>
-                {% else %}
-                  {{ project.image_credit }}
-                {% endif %}
-              </span>
-            {% endif %}
-          </div>
+          <div class="featured-project-image"><img src="{{ project.image | relative_url }}" alt="{{ project.title }}"></div>
           <div class="featured-project-content">
             <div class="featured-project-year">{{ project.year }}</div>
             <h3>{{ project.title }}</h3>
@@ -68,46 +52,43 @@ nav_order: 5
     {% assign themes = "Accessibility and transport equity|Sustainable mobility & cycling|Food delivery" | split: "|" %}
     {% assign theme_images = "/assets/img/theme-accessibility.jpg|/assets/img/theme-cycling.jpg|/assets/img/theme-food-delivery.jpg" | split: "|" %}
 
-```
-{% for theme in themes %}
-  {% assign theme_index = forloop.index0 %}
-  {% assign theme_projects = projects | where: "theme", theme %}
-  <section class="project-theme">
-    <div class="project-theme-image">
-      <img src="{{ theme_images[theme_index] | relative_url }}" alt="{{ theme }}">
-    </div>
-    <div class="project-theme-main">
-      <div class="project-theme-intro">
-        <h3>{{ theme }}</h3>
-      </div>
-      <div class="project-theme-list">
-        {% for project in theme_projects %}
-          <details class="project-item">
-            <summary>
-              <span class="project-item-title">{{ project.title }}</span>
-              <span class="project-item-year">{{ project.year }}</span>
-            </summary>
-            <div class="project-item-content">
-              {% case project.role %}
-                {% when "pi" %}{% assign role_label = "Principal Investigator" %}
-                {% when "co-pi" %}{% assign role_label = "Co-Principal Investigator" %}
-                {% when "co-applicant" %}{% assign role_label = "Co-Applicant" %}
-                {% when "collaborator" %}{% assign role_label = "Collaborator" %}
-              {% endcase %}
-              <p><strong>Role:</strong> {{ role_label }}</p>
-              <p><strong>Funded by:</strong> {{ project.funder }}</p>
-              {% if project.duration %}<p><strong>Duration:</strong> {{ project.duration }}</p>{% endif %}
-              <p><strong>Awarded:</strong> {{ project.awarded }}</p>
-              <div class="project-team"><strong>Team:</strong><ul>{% for member in project.team %}<li>{{ member }}</li>{% endfor %}</ul></div>
-            </div>
-          </details>
-        {% endfor %}
-      </div>
-    </div>
-  </section>
-{% endfor %}
-```
-
+    {% for theme in themes %}
+      {% assign theme_index = forloop.index0 %}
+      {% assign theme_projects = projects | where: "theme", theme %}
+      <section class="project-theme">
+        <div class="project-theme-image">
+          <img src="{{ theme_images[theme_index] | relative_url }}" alt="{{ theme }}">
+        </div>
+        <div class="project-theme-main">
+          <div class="project-theme-intro">
+            <h3>{{ theme }}</h3>
+          </div>
+          <div class="project-theme-list">
+            {% for project in theme_projects %}
+              <details class="project-item">
+                <summary>
+                  <span class="project-item-title">{{ project.title }}</span>
+                  <span class="project-item-year">{{ project.year }}</span>
+                </summary>
+                <div class="project-item-content">
+                  {% case project.role %}
+                    {% when "pi" %}{% assign role_label = "Principal Investigator" %}
+                    {% when "co-pi" %}{% assign role_label = "Co-Principal Investigator" %}
+                    {% when "co-applicant" %}{% assign role_label = "Co-Applicant" %}
+                    {% when "collaborator" %}{% assign role_label = "Collaborator" %}
+                  {% endcase %}
+                  <p><strong>Role:</strong> {{ role_label }}</p>
+                  <p><strong>Funded by:</strong> {{ project.funder }}</p>
+                  {% if project.duration %}<p><strong>Duration:</strong> {{ project.duration }}</p>{% endif %}
+                  <p><strong>Awarded:</strong> {{ project.awarded }}</p>
+                  <div class="project-team"><strong>Team:</strong><ul>{% for member in project.team %}<li>{{ member }}</li>{% endfor %}</ul></div>
+                </div>
+              </details>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+    {% endfor %}
   </div>
 </div>
 
@@ -122,11 +103,8 @@ nav_order: 5
 .featured-projects-header p,.project-themes-header p{margin:0;font-size:.9rem;color:var(--global-text-color-light)}
 .featured-projects{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
 .featured-project{overflow:hidden;border:1px solid var(--global-divider-color);border-radius:12px;background:var(--global-bg-color)}
-.featured-project-image{height:180px;overflow:hidden;position:relative}
+.featured-project-image{height:180px;overflow:hidden}
 .featured-project-image img{width:100%;height:100%;display:block;object-fit:cover}
-.image-credit{position:absolute;bottom:0;right:0;margin:0;padding:3px 6px;font-size:9px;line-height:1.3;font-weight:400;color:#fff;background:rgba(0,0,0,.55)}
-.image-credit a{color:inherit;text-decoration:none}
-.image-credit a:hover{text-decoration:underline}
 .featured-project-content{padding:1.15rem}
 .featured-project-year{margin-bottom:.35rem;font-size:.85rem;color:var(--global-text-color-light)}
 .featured-project h3{margin:0;font-size:1.05rem;font-weight:500;line-height:1.4}
