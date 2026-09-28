@@ -41,8 +41,6 @@ nav_order: 5
       Photo by
       <a href="{{ project.image_credit_url }}" target="_blank" rel="noopener noreferrer">
         {{ project.image_credit }}
-      </a>
-      on <a href="{{ project.image_credit_url }}" target="_blank" rel="noopener noreferrer">Unsplash</a>
     </p>
   {% endif %}
           <div class="featured-project-content">
@@ -117,6 +115,23 @@ nav_order: 5
 .featured-project{overflow:hidden;border:1px solid var(--global-divider-color);border-radius:12px;background:var(--global-bg-color)}
 .featured-project-image{height:180px;overflow:hidden}
 .featured-project-image img{width:100%;height:100%;display:block;object-fit:cover}
+/* Subtle image credits */
+.image-credit {
+  margin: 0.2rem 0 0.6rem;
+  font-size: 0.65rem;
+  line-height: 1.3;
+  color: var(--global-text-color-light);
+  opacity: 0.75;
+}
+
+.image-credit a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.image-credit a:hover {
+  text-decoration: underline;
+}
 .featured-project-content{padding:1.15rem}
 .featured-project-year{margin-bottom:.35rem;font-size:.85rem;color:var(--global-text-color-light)}
 .featured-project h3{margin:0;font-size:1.05rem;font-weight:500;line-height:1.4}
