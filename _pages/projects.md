@@ -32,7 +32,19 @@ nav_order: 5
     {% for project in projects %}
       {% if project.featured %}
         <article class="featured-project">
-          <div class="featured-project-image"><img src="{{ project.image | relative_url }}" alt="{{ project.title }}"></div>
+          <div class="featured-project-image">
+            <img src="{{ project.image | relative_url }}" alt="{{ project.title }}">
+  </div>
+
+  {% if project.image_credit %}
+    <p class="image-credit">
+      Photo by
+      <a href="{{ project.image_credit_url }}" target="_blank" rel="noopener noreferrer">
+        {{ project.image_credit }}
+      </a>
+      on <a href="{{ project.image_credit_url }}" target="_blank" rel="noopener noreferrer">Unsplash</a>
+    </p>
+  {% endif %}
           <div class="featured-project-content">
             <div class="featured-project-year">{{ project.year }}</div>
             <h3>{{ project.title }}</h3>
