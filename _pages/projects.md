@@ -1,3 +1,4 @@
+
 ---
 layout: page
 permalink: /projects/
@@ -67,14 +68,21 @@ nav_order: 5
   <div class="project-themes">
     {% assign themes = "Accessibility and transport equity|Sustainable mobility & cycling|Food delivery" | split: "|" %}
     {% assign theme_images = "/assets/img/theme-accessibility.jpg|/assets/img/theme-cycling.jpg|/assets/img/theme-food-delivery.jpg" | split: "|" %}
+    {% assign theme_credits = "Jordy Munoz|Felix Macleod|Jonathan Gong" | split: "|" %}
+    {% assign theme_credit_urls = "https://unsplash.com/photos/a-person-walking-with-a-stroller-1zdfKW9naTQ|https://unsplash.com/photos/a-man-riding-a-bike-down-a-street-next-to-tall-buildings-LabnR96dlu8|https://unsplash.com/photos/a-man-riding-a-bike-across-a-street-3rxoGZBfDxg" | split: "|" %}
 
     {% for theme in themes %}
       {% assign theme_index = forloop.index0 %}
       {% assign theme_projects = projects | where: "theme", theme %}
 
       <section class="project-theme">
-        <div class="project-theme-image">
-          <img src="{{ theme_images[theme_index] | relative_url }}" alt="{{ theme }}">
+        <div class="project-theme-visual">
+          <div class="project-theme-image">
+            <img src="{{ theme_images[theme_index] | relative_url }}" alt="{{ theme }}">
+          </div>
+          <p class="project-theme-credit">
+            Photo by <a href="{{ theme_credit_urls[theme_index] }}" target="_blank" rel="noopener noreferrer">{{ theme_credits[theme_index] }}</a>
+          </p>
         </div>
 
         <div class="project-theme-main">
@@ -263,6 +271,19 @@ nav_order: 5
   object-fit: cover;
 }
 
+.project-theme-credit {
+  margin: .4rem 0 0;
+  font-size: .7rem;
+  line-height: 1.4;
+  color: var(--global-text-color-light);
+}
+
+.project-theme-credit a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .project-theme-main {
   min-width: 0;
 }
@@ -350,6 +371,10 @@ nav_order: 5
 
   .project-theme-image {
     height: 220px;
+    margin-bottom: 0;
+  }
+
+  .project-theme-visual {
     margin-bottom: 1.25rem;
   }
 }
