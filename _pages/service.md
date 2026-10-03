@@ -38,9 +38,9 @@ nav_order: 6
 |:--|:--|
 | 2026–present | **Associate Editor**, *Journal of Transport Geography* |
 | 2026–present | **Advisory board member**, Millennium Group on Transport Justice, ANID, Chile |
-| 2024–present | **Member of the Scientific Committee**, Mexico-Canada 2025 Transport and Logistics Congress |
 | 2024–present | **Regular board member**, World Society of Transport and Land Use Research (WSTLUR) |
-| 2023–present | **Member of the Editorial Board**, *Journal of Transport Geography* |
+| 2024–2025 | **Member of the Scientific Committee**, Mexico-Canada 2025 Transport and Logistics Congress |
+| 2023–2026 | **Member of the Editorial Board**, *Journal of Transport Geography* |
 
 ### Professional memberships and committees
 
@@ -61,45 +61,127 @@ nav_order: 6
 | 2021–present | Member and Program Committee Member for the 2025 Annual Conference, [Chilean Society of Transportation Engineering (SOCHITRAN)](https://sochitran.cl/) |
 | 2019–present | Member of the Latin American branch, [International Network for Transport and Accessibility in Low-Income Communities (INTALInC LAC)](https://intalinc-lac.com/) |
 
-### Journal peer review
 
-**115 peer-reviewed papers reviewed across 30 journals (2018–2026).**
+<h3>Journal peer review</h3>
+
+<p><strong>115 peer-reviewed papers reviewed across 30 journals (2018–2026).</strong></p>
 
 <details class="service-details" markdown="1">
-<summary>View the full journal list and review counts</summary>
+<summary>View journals grouped by number of reviews</summary>
 
-| Journal | Reviews |
-|:--|--:|
-| *Journal of Transport Geography* | 29 |
-| *Transportation Research Part A* | 17 |
-| *Transport Reviews* | 11 |
-| *Transport Policy* | 5 |
-| *Transportation Research Record* | 5 |
-| *Journal of Transport and Health* | 4 |
-| *Case studies of Transport Policy* | 3 |
-| *Transportation Research Part D* | 3 |
-| *Journal of Urban Mobility* | 3 |
-| *Habitat International* | 5 |
-| *Nature Cities* | 3 |
-| *Transportation* | 2 |
-| *Transportation Research Interdisciplinary Perspectives* | 2 |
-| *Estudios de Transporte* | 2 |
-| *Research in Transportation Business and Management* | 2 |
-| *Applied Geography* | 2 |
-| *Travel Behaviour and Society* | 2 |
-| *Journal of Public Transportation* | 1 |
-| *Journal of Transport and Land Use* | 1 |
-| *Computers, Environment and Urban Systems* | 1 |
-| *Journal of Planning Literature* | 1 |
-| *International Journal of Sustainable Transport* | 1 |
-| *Journal of Geographical Systems* | 2 |
-| *Findings* | 2 |
-| *npj Sustainable Mobility and Transport* | 1 |
-| *Humanities & Social Sciences Communications* | 1 |
-| *Urban Studies* | 1 |
-| *Gender, Place and Culture* | 1 |
-| *Nature Sustainability* | 1 |
-| *Transportation Research Part F: Traffic Psychology and Behaviour* | 1 |
+<style>
+.review-count-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.92rem;
+}
+.review-count-table th,
+.review-count-table td {
+  padding: 0.8rem 0.7rem;
+  border-bottom: 1px solid var(--global-divider-color);
+  vertical-align: middle;
+}
+.review-count-table th {
+  text-align: left;
+  font-weight: 600;
+}
+.review-count-table .count-cell {
+  width: 65px;
+  text-align: right;
+  white-space: nowrap;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.review-count-table .bar-cell {
+  width: 125px;
+}
+.review-bar {
+  width: 100%;
+  height: 9px;
+  background: var(--global-bg-color);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--global-divider-color);
+}
+.review-bar-fill {
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #73b7a5, #327c91);
+}
+.review-journals {
+  line-height: 1.8;
+}
+@media (max-width: 600px) {
+  .review-count-table th,
+  .review-count-table td {
+    padding: 0.65rem 0.35rem;
+  }
+  .review-count-table .bar-cell {
+    width: 65px;
+  }
+}
+</style>
+
+<table class="review-count-table">
+<thead>
+<tr>
+<th>Journal(s)</th>
+<th class="count-cell">Reviews</th>
+<th class="bar-cell">Relative volume</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="review-journals"><em>Journal of Transport Geography</em></td>
+<td class="count-cell">29</td>
+<td class="bar-cell"><div class="review-bar"><div class="review-bar-fill" style="width:100%"></div></div></td>
+</tr>
+<tr>
+<td class="review-journals"><em>Transportation Research Part A</em></td>
+<td class="count-cell">17</td>
+<td class="bar-cell"><div class="review-bar"><div class="review-bar-fill" style="width:58.6%"></div></div></td>
+</tr>
+<tr>
+<td class="review-journals"><em>Transport Reviews</em></td>
+<td class="count-cell">11</td>
+<td class="bar-cell"><div class="review-bar"><div class="review-bar-fill" style="width:37.9%"></div></div></td>
+</tr>
+<tr>
+<td class="review-journals">
+<em>Transport Policy</em>; <em>Transportation Research Record</em>; <em>Habitat International</em>
+</td>
+<td class="count-cell">5</td>
+<td class="bar-cell"><div class="review-bar"><div class="review-bar-fill" style="width:17.2%"></div></div></td>
+</tr>
+<tr>
+<td class="review-journals"><em>Journal of Transport and Health</em></td>
+<td class="count-cell">4</td>
+<td class="bar-cell"><div class="review-bar"><div class="review-bar-fill" style="width:13.8%"></div></div></td>
+</tr>
+<tr>
+<td class="review-journals">
+<em>Case Studies on Transport Policy</em>; <em>Transportation Research Part D</em>; <em>Journal of Urban Mobility</em>; <em>Nature Cities</em>
+</td>
+<td class="count-cell">3</td>
+<td class="bar-cell"><div class="review-bar"><div class="review-bar-fill" style="width:10.3%"></div></div></td>
+</tr>
+<tr>
+<td class="review-journals">
+<em>Transportation</em>; <em>Transportation Research Interdisciplinary Perspectives</em>; <em>Estudios de Transporte</em>; <em>Research in Transportation Business and Management</em>; <em>Applied Geography</em>; <em>Travel Behaviour and Society</em>; <em>Journal of Geographical Systems</em>; <em>Findings</em>
+</td>
+<td class="count-cell">2</td>
+<td class="bar-cell"><div class="review-bar"><div class="review-bar-fill" style="width:6.9%"></div></div></td>
+</tr>
+<tr>
+<td class="review-journals">
+<em>Journal of Public Transportation</em>; <em>Journal of Transport and Land Use</em>; <em>Computers, Environment and Urban Systems</em>; <em>Journal of Planning Literature</em>; <em>International Journal of Sustainable Transport</em>; <em>npj Sustainable Mobility and Transport</em>; <em>Humanities &amp; Social Sciences Communications</em>; <em>Urban Studies</em>; <em>Gender, Place and Culture</em>; <em>Nature Sustainability</em>; <em>Transportation Research Part F: Traffic Psychology and Behaviour</em>
+</td>
+<td class="count-cell">1</td>
+<td class="bar-cell"><div class="review-bar"><div class="review-bar-fill" style="width:3.4%"></div></div></td>
+</tr>
+</tbody>
+</table>
 
 </details>
 
