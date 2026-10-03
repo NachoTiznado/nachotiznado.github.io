@@ -69,56 +69,80 @@ nav_order: 6
 <details class="service-details" markdown="1">
 <summary>View journals grouped by number of reviews</summary>
 
+
 <style>
 .review-count-table {
   width: 100%;
+  max-width: 100%;
+  table-layout: fixed;
   border-collapse: collapse;
   margin-top: 1rem;
-  font-size: 0.92rem;
+  font-size: 0.88rem;
 }
+
 .review-count-table th,
 .review-count-table td {
-  padding: 0.8rem 0.7rem;
+  padding: 0.75rem 0.4rem;
   border-bottom: 1px solid var(--global-divider-color);
-  vertical-align: middle;
+  vertical-align: top;
+  overflow-wrap: anywhere;
 }
+
 .review-count-table th {
   text-align: left;
   font-weight: 600;
 }
+
+.review-count-table .journal-cell {
+  width: auto;
+  line-height: 1.7;
+}
+
 .review-count-table .count-cell {
-  width: 65px;
-  text-align: right;
+  width: 42px;
+  text-align: center;
   white-space: nowrap;
   font-weight: 600;
   font-variant-numeric: tabular-nums;
+  vertical-align: middle;
 }
+
 .review-count-table .bar-cell {
-  width: 125px;
+  width: 68px;
+  vertical-align: middle;
 }
+
 .review-bar {
   width: 100%;
-  height: 9px;
+  height: 8px;
   background: var(--global-bg-color);
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid var(--global-divider-color);
 }
+
 .review-bar-fill {
   height: 100%;
   border-radius: 10px;
   background: linear-gradient(90deg, #73b7a5, #327c91);
 }
-.review-journals {
-  line-height: 1.8;
-}
-@media (max-width: 600px) {
+
+@media (max-width: 480px) {
+  .review-count-table {
+    font-size: 0.82rem;
+  }
+
   .review-count-table th,
   .review-count-table td {
-    padding: 0.65rem 0.35rem;
+    padding: 0.65rem 0.25rem;
   }
+
+  .review-count-table .count-cell {
+    width: 34px;
+  }
+
   .review-count-table .bar-cell {
-    width: 65px;
+    width: 48px;
   }
 }
 </style>
@@ -126,57 +150,49 @@ nav_order: 6
 <table class="review-count-table">
 <thead>
 <tr>
-<th>Journal(s)</th>
+<th class="journal-cell">Journal(s)</th>
 <th class="count-cell">Reviews</th>
-<th class="bar-cell">Relative volume</th>
+<th class="bar-cell">Volume</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="review-journals"><em>Journal of Transport Geography</em></td>
+<td class="journal-cell"><em>Journal of Transport Geography</em></td>
 <td class="count-cell">29</td>
 <td class="bar-cell"><div class="review-bar"><div class="review-bar-fill" style="width:100%"></div></div></td>
 </tr>
 <tr>
-<td class="review-journals"><em>Transportation Research Part A</em></td>
+<td class="journal-cell"><em>Transportation Research Part A</em></td>
 <td class="count-cell">17</td>
 <td class="bar-cell"><div class="review-bar"><div class="review-bar-fill" style="width:58.6%"></div></div></td>
 </tr>
 <tr>
-<td class="review-journals"><em>Transport Reviews</em></td>
+<td class="journal-cell"><em>Transport Reviews</em></td>
 <td class="count-cell">11</td>
 <td class="bar-cell"><div class="review-bar"><div class="review-bar-fill" style="width:37.9%"></div></div></td>
 </tr>
 <tr>
-<td class="review-journals">
-<em>Transport Policy</em>; <em>Transportation Research Record</em>; <em>Habitat International</em>
-</td>
+<td class="journal-cell"><em>Transport Policy</em>; <em>Transportation Research Record</em>; <em>Habitat International</em></td>
 <td class="count-cell">5</td>
 <td class="bar-cell"><div class="review-bar"><div class="review-bar-fill" style="width:17.2%"></div></div></td>
 </tr>
 <tr>
-<td class="review-journals"><em>Journal of Transport and Health</em></td>
+<td class="journal-cell"><em>Journal of Transport and Health</em></td>
 <td class="count-cell">4</td>
 <td class="bar-cell"><div class="review-bar"><div class="review-bar-fill" style="width:13.8%"></div></div></td>
 </tr>
 <tr>
-<td class="review-journals">
-<em>Case Studies on Transport Policy</em>; <em>Transportation Research Part D</em>; <em>Journal of Urban Mobility</em>; <em>Nature Cities</em>
-</td>
+<td class="journal-cell"><em>Case Studies on Transport Policy</em>; <em>Transportation Research Part D</em>; <em>Journal of Urban Mobility</em>; <em>Nature Cities</em></td>
 <td class="count-cell">3</td>
 <td class="bar-cell"><div class="review-bar"><div class="review-bar-fill" style="width:10.3%"></div></div></td>
 </tr>
 <tr>
-<td class="review-journals">
-<em>Transportation</em>; <em>Transportation Research Interdisciplinary Perspectives</em>; <em>Estudios de Transporte</em>; <em>Research in Transportation Business and Management</em>; <em>Applied Geography</em>; <em>Travel Behaviour and Society</em>; <em>Journal of Geographical Systems</em>; <em>Findings</em>
-</td>
+<td class="journal-cell"><em>Transportation</em>; <em>Transportation Research Interdisciplinary Perspectives</em>; <em>Estudios de Transporte</em>; <em>Research in Transportation Business and Management</em>; <em>Applied Geography</em>; <em>Travel Behaviour and Society</em>; <em>Journal of Geographical Systems</em>; <em>Findings</em></td>
 <td class="count-cell">2</td>
 <td class="bar-cell"><div class="review-bar"><div class="review-bar-fill" style="width:6.9%"></div></div></td>
 </tr>
 <tr>
-<td class="review-journals">
-<em>Journal of Public Transportation</em>; <em>Journal of Transport and Land Use</em>; <em>Computers, Environment and Urban Systems</em>; <em>Journal of Planning Literature</em>; <em>International Journal of Sustainable Transport</em>; <em>npj Sustainable Mobility and Transport</em>; <em>Humanities &amp; Social Sciences Communications</em>; <em>Urban Studies</em>; <em>Gender, Place and Culture</em>; <em>Nature Sustainability</em>; <em>Transportation Research Part F: Traffic Psychology and Behaviour</em>
-</td>
+<td class="journal-cell"><em>Journal of Public Transportation</em>; <em>Journal of Transport and Land Use</em>; <em>Computers, Environment and Urban Systems</em>; <em>Journal of Planning Literature</em>; <em>International Journal of Sustainable Transport</em>; <em>npj Sustainable Mobility and Transport</em>; <em>Humanities &amp; Social Sciences Communications</em>; <em>Urban Studies</em>; <em>Gender, Place and Culture</em>; <em>Nature Sustainability</em>; <em>Transportation Research Part F: Traffic Psychology and Behaviour</em></td>
 <td class="count-cell">1</td>
 <td class="bar-cell"><div class="review-bar"><div class="review-bar-fill" style="width:3.4%"></div></div></td>
 </tr>
