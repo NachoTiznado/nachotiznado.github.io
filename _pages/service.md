@@ -62,63 +62,59 @@ nav_order: 6
 | 2019–present | Member of the Latin American branch, [International Network for Transport and Accessibility in Low-Income Communities (INTALInC LAC)](https://intalinc-lac.com/) |
 
 
+
 <h3>Journal peer review</h3>
 
 <p><strong>115 peer-reviewed papers reviewed across 30 journals (2018–2026).</strong></p>
 
-<details class="service-details" markdown="1">
-<summary>View journals grouped by number of reviews</summary>
-
-
 <style>
-.review-count-table {
+.review-list {
   width: 100%;
   max-width: 100%;
-  table-layout: fixed;
-  border-collapse: collapse;
-  margin-top: 1rem;
   font-size: 0.88rem;
 }
 
-.review-count-table th,
-.review-count-table td {
-  padding: 0.75rem 0.4rem;
+.review-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 48px 76px;
+  gap: 10px;
+  align-items: center;
+  padding: 13px 0;
   border-bottom: 1px solid var(--global-divider-color);
-  vertical-align: top;
-  overflow-wrap: anywhere;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.review-count-table th {
-  text-align: left;
+.review-heading {
+  font-size: 0.82rem;
   font-weight: 600;
+  color: var(--global-text-color-light);
+  padding-top: 8px;
+  padding-bottom: 10px;
 }
 
-.review-count-table .journal-cell {
-  width: auto;
-  line-height: 1.7;
+.review-journals {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  white-space: normal;
+  line-height: 1.65;
 }
 
-.review-count-table .count-cell {
-  width: 42px;
+.review-number {
   text-align: center;
-  white-space: nowrap;
   font-weight: 600;
   font-variant-numeric: tabular-nums;
-  vertical-align: middle;
-}
-
-.review-count-table .bar-cell {
-  width: 68px;
-  vertical-align: middle;
 }
 
 .review-bar {
   width: 100%;
   height: 8px;
-  background: var(--global-bg-color);
   border-radius: 10px;
   overflow: hidden;
+  background: var(--global-bg-color);
   border: 1px solid var(--global-divider-color);
+  box-sizing: border-box;
 }
 
 .review-bar-fill {
@@ -128,78 +124,84 @@ nav_order: 6
 }
 
 @media (max-width: 480px) {
-  .review-count-table {
-    font-size: 0.82rem;
+  .review-row {
+    grid-template-columns: minmax(0, 1fr) 34px 46px;
+    gap: 6px;
+    padding: 11px 0;
+    font-size: 0.8rem;
   }
 
-  .review-count-table th,
-  .review-count-table td {
-    padding: 0.65rem 0.25rem;
-  }
-
-  .review-count-table .count-cell {
-    width: 34px;
-  }
-
-  .review-count-table .bar-cell {
-    width: 48px;
+  .review-heading {
+    font-size: 0.75rem;
   }
 }
 </style>
 
-<table class="review-count-table">
-<thead>
-<tr>
-<th class="journal-cell">Journal(s)</th>
-<th class="count-cell">Reviews</th>
-<th class="bar-cell">Volume</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="journal-cell"><em>Journal of Transport Geography</em></td>
-<td class="count-cell">29</td>
-<td class="bar-cell"><div class="review-bar"><div class="review-bar-fill" style="width:100%"></div></div></td>
-</tr>
-<tr>
-<td class="journal-cell"><em>Transportation Research Part A</em></td>
-<td class="count-cell">17</td>
-<td class="bar-cell"><div class="review-bar"><div class="review-bar-fill" style="width:58.6%"></div></div></td>
-</tr>
-<tr>
-<td class="journal-cell"><em>Transport Reviews</em></td>
-<td class="count-cell">11</td>
-<td class="bar-cell"><div class="review-bar"><div class="review-bar-fill" style="width:37.9%"></div></div></td>
-</tr>
-<tr>
-<td class="journal-cell"><em>Transport Policy</em>; <em>Transportation Research Record</em>; <em>Habitat International</em></td>
-<td class="count-cell">5</td>
-<td class="bar-cell"><div class="review-bar"><div class="review-bar-fill" style="width:17.2%"></div></div></td>
-</tr>
-<tr>
-<td class="journal-cell"><em>Journal of Transport and Health</em></td>
-<td class="count-cell">4</td>
-<td class="bar-cell"><div class="review-bar"><div class="review-bar-fill" style="width:13.8%"></div></div></td>
-</tr>
-<tr>
-<td class="journal-cell"><em>Case Studies on Transport Policy</em>; <em>Transportation Research Part D</em>; <em>Journal of Urban Mobility</em>; <em>Nature Cities</em></td>
-<td class="count-cell">3</td>
-<td class="bar-cell"><div class="review-bar"><div class="review-bar-fill" style="width:10.3%"></div></div></td>
-</tr>
-<tr>
-<td class="journal-cell"><em>Transportation</em>; <em>Transportation Research Interdisciplinary Perspectives</em>; <em>Estudios de Transporte</em>; <em>Research in Transportation Business and Management</em>; <em>Applied Geography</em>; <em>Travel Behaviour and Society</em>; <em>Journal of Geographical Systems</em>; <em>Findings</em></td>
-<td class="count-cell">2</td>
-<td class="bar-cell"><div class="review-bar"><div class="review-bar-fill" style="width:6.9%"></div></div></td>
-</tr>
-<tr>
-<td class="journal-cell"><em>Journal of Public Transportation</em>; <em>Journal of Transport and Land Use</em>; <em>Computers, Environment and Urban Systems</em>; <em>Journal of Planning Literature</em>; <em>International Journal of Sustainable Transport</em>; <em>npj Sustainable Mobility and Transport</em>; <em>Humanities &amp; Social Sciences Communications</em>; <em>Urban Studies</em>; <em>Gender, Place and Culture</em>; <em>Nature Sustainability</em>; <em>Transportation Research Part F: Traffic Psychology and Behaviour</em></td>
-<td class="count-cell">1</td>
-<td class="bar-cell"><div class="review-bar"><div class="review-bar-fill" style="width:3.4%"></div></div></td>
-</tr>
-</tbody>
-</table>
+<div class="review-list">
 
-</details>
+  <div class="review-row review-heading">
+    <div class="review-journals">Journal(s)</div>
+    <div class="review-number">Reviews</div>
+    <div>Volume</div>
+  </div>
+
+  <div class="review-row">
+    <div class="review-journals"><em>Journal of Transport Geography</em></div>
+    <div class="review-number">29</div>
+    <div class="review-bar"><div class="review-bar-fill" style="width:100%"></div></div>
+  </div>
+
+  <div class="review-row">
+    <div class="review-journals"><em>Transportation Research Part A</em></div>
+    <div class="review-number">17</div>
+    <div class="review-bar"><div class="review-bar-fill" style="width:58.6%"></div></div>
+  </div>
+
+  <div class="review-row">
+    <div class="review-journals"><em>Transport Reviews</em></div>
+    <div class="review-number">11</div>
+    <div class="review-bar"><div class="review-bar-fill" style="width:37.9%"></div></div>
+  </div>
+
+  <div class="review-row">
+    <div class="review-journals">
+      <em>Transport Policy</em>; <em>Transportation Research Record</em>; <em>Habitat International</em>
+    </div>
+    <div class="review-number">5</div>
+    <div class="review-bar"><div class="review-bar-fill" style="width:17.2%"></div></div>
+  </div>
+
+  <div class="review-row">
+    <div class="review-journals"><em>Journal of Transport and Health</em></div>
+    <div class="review-number">4</div>
+    <div class="review-bar"><div class="review-bar-fill" style="width:13.8%"></div></div>
+  </div>
+
+  <div class="review-row">
+    <div class="review-journals">
+      <em>Case Studies on Transport Policy</em>; <em>Transportation Research Part D</em>; <em>Journal of Urban Mobility</em>; <em>Nature Cities</em>
+    </div>
+    <div class="review-number">3</div>
+    <div class="review-bar"><div class="review-bar-fill" style="width:10.3%"></div></div>
+  </div>
+
+  <div class="review-row">
+    <div class="review-journals">
+      <em>Transportation</em>; <em>Transportation Research Interdisciplinary Perspectives</em>; <em>Estudios de Transporte</em>; <em>Research in Transportation Business and Management</em>; <em>Applied Geography</em>; <em>Travel Behaviour and Society</em>; <em>Journal of Geographical Systems</em>; <em>Findings</em>
+    </div>
+    <div class="review-number">2</div>
+    <div class="review-bar"><div class="review-bar-fill" style="width:6.9%"></div></div>
+  </div>
+
+  <div class="review-row">
+    <div class="review-journals">
+      <em>Journal of Public Transportation</em>; <em>Journal of Transport and Land Use</em>; <em>Computers, Environment and Urban Systems</em>; <em>Journal of Planning Literature</em>; <em>International Journal of Sustainable Transport</em>; <em>npj Sustainable Mobility and Transport</em>; <em>Humanities &amp; Social Sciences Communications</em>; <em>Urban Studies</em>; <em>Gender, Place and Culture</em>; <em>Nature Sustainability</em>; <em>Transportation Research Part F: Traffic Psychology and Behaviour</em>
+    </div>
+    <div class="review-number">1</div>
+    <div class="review-bar"><div class="review-bar-fill" style="width:3.4%"></div></div>
+  </div>
+
+</div>
 
 ### Conference reviewing
 
