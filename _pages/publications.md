@@ -134,6 +134,14 @@ nav_order: 2
   height: 300px;
 }
 
+.citation-last-updated {
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--global-text-color-light);
+}
+
 /* Featured research */
 
 .featured-research {
