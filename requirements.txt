@@ -2,4 +2,4 @@ nbconvert
 pyyaml
 rendercv[full]
 scholarly
-bibtexparser<2
+bibtexparser==1.4.4
