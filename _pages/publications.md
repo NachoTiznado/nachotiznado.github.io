@@ -430,6 +430,10 @@ nav_order: 2
 
 </div>
 
+<p class="citation-last-updated">
+  Citation data last updated:
+  {{ site.data.citations.metadata.last_updated | date: "%B %-d, %Y" }}.
+</p>
 
 <!-- Featured research -->
 
@@ -460,10 +464,14 @@ nav_order: 2
 
       <div class="featured-content">
 
-        <h3>
+      <h3>
+        <a href="https://doi.org/10.1016/j.jtrangeo.2020.102919"
+          target="_blank"
+          rel="noopener noreferrer">
           Public transport accessibility accounting for level of service and
           competition for urban opportunities
-        </h3>
+        </a>
+      </h3>
 
         <div class="featured-meta">
           <em>Journal of Transport Geography</em> · 2021
