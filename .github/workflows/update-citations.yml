@@ -23,6 +23,11 @@ jobs:
         with:
           python-version: "3.13"
 
+      - name: Verify citation dependencies
+        run: |
+          python -m pip show scholarly bibtexparser
+          python -c "from bibtexparser.bibdatabase import BibDatabase; from scholarly import scholarly; print('Imports successful')"
+
       - name: Install dependencies
         run: |
           echo "🔧 Installing dependencies..."
