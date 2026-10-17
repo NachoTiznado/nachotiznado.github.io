@@ -6,33 +6,6 @@ description: Conferences, invited lectures, keynote presentations, workshops, an
 nav: true
 nav_order: 4
 ---
-<div class="talks-page">
-
-{% assign talks_with_countries = site.data.talks | where_exp: "talk", "talk.country != nil and talk.country != ''" %}
-{% assign talks_with_cities = site.data.talks | where_exp: "talk", "talk.city != nil and talk.city != ''" %}
-
-{% assign countries = talks_with_countries | map: "country" | uniq | size %}
-{% assign cities = talks_with_cities | map: "city" | uniq | size %}
-{% assign presentations = site.data.talks | size %}
-
-<div class="talks-stats">
-
-  <div class="talks-stat">
-    <div class="talks-stat-value">{{ presentations }}</div>
-    <div class="talks-stat-label">Presentations · 2016–2026</div>
-  </div>
-
-  <div class="talks-stat">
-    <div class="talks-stat-value">{{ countries }}</div>
-    <div class="talks-stat-label">Countries</div>
-  </div>
-
-  <div class="talks-stat">
-    <div class="talks-stat-value">{{ cities }}</div>
-    <div class="talks-stat-label">Cities</div>
-  </div>
-
-</div>
 
 <!-- Presentation photos -->
 
@@ -69,6 +42,34 @@ nav_order: 4
       loading="lazy"
     >
   </figure>
+
+</div>
+
+<div class="talks-page">
+
+{% assign talks_with_countries = site.data.talks | where_exp: "talk", "talk.country != nil and talk.country != ''" %}
+{% assign talks_with_cities = site.data.talks | where_exp: "talk", "talk.city != nil and talk.city != ''" %}
+
+{% assign countries = talks_with_countries | map: "country" | uniq | size %}
+{% assign cities = talks_with_cities | map: "city" | uniq | size %}
+{% assign presentations = site.data.talks | size %}
+
+<div class="talks-stats">
+
+  <div class="talks-stat">
+    <div class="talks-stat-value">{{ presentations }}</div>
+    <div class="talks-stat-label">Presentations · 2016–2026</div>
+  </div>
+
+  <div class="talks-stat">
+    <div class="talks-stat-value">{{ countries }}</div>
+    <div class="talks-stat-label">Countries</div>
+  </div>
+
+  <div class="talks-stat">
+    <div class="talks-stat-value">{{ cities }}</div>
+    <div class="talks-stat-label">Cities</div>
+  </div>
 
 </div>
 
