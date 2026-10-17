@@ -506,10 +506,14 @@ nav_order: 2
 
       <div class="featured-content">
 
-        <h3>
+      <h3>
+        <a href="https://doi.org/10.1080/01441647.2020.1711828"
+          target="_blank"
+          rel="noopener noreferrer">
           Transport and equity in Latin America: a critical review of socially
           oriented accessibility assessments
-        </h3>
+        </a>
+      </h3>
 
         <div class="featured-meta">
           <em>Transport Reviews</em> · 2020
@@ -545,10 +549,14 @@ nav_order: 2
 
       <div class="featured-content">
 
-        <h3>
+      <h3>
+        <a href="https://doi.org/10.1016/j.trip.2024.101175"
+          target="_blank"
+          rel="noopener noreferrer">
           Exploring the interplay of transportation, time poverty, and activity
           participation
-        </h3>
+        </a>
+      </h3>
 
         <div class="featured-meta">
           <em>Transportation Research Interdisciplinary Perspectives</em> · 2024
@@ -584,10 +592,14 @@ nav_order: 2
 
       <div class="featured-content">
 
-        <h3>
+      <h3>
+        <a href="https://doi.org/10.1016/j.tra.2026.105031"
+          target="_blank"
+          rel="noopener noreferrer">
           Tracking cycling behaviour and comfort perceptions in Toronto:
           Trends from 1999 to 2023
-        </h3>
+        </a>
+      </h3>
 
         <div class="featured-meta">
           <em>Transportation Research Part A</em> · 2026
@@ -623,10 +635,14 @@ nav_order: 2
 
       <div class="featured-content">
 
-        <h3>
+      <h3>
+        <a href="https://doi.org/10.1177/00420980251361626"
+          target="_blank"
+          rel="noopener noreferrer">
           Profiling caregivers: caregiving workload, mobility, stress, and
           remote work difficulties
-        </h3>
+        </a>
+      </h3>
 
         <div class="featured-meta">
           <em>Urban Studies</em> · 2025
