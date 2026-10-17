@@ -678,9 +678,13 @@ nav_order: 2
 
       <div class="featured-content">
 
-        <h3>
+      <h3>
+        <a href="https://doi.org/10.1007/s11116-025-10693-8"
+          target="_blank"
+          rel="noopener noreferrer">
           Standards of fairness in the transportation literature
-        </h3>
+        </a>
+      </h3>
 
         <div class="featured-meta">
           <em>Transportation</em> · 2025
